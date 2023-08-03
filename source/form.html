@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo-icon">
+      <svg role="img" aria-label="Логотип интернет-магазина «Кэт энерджи»."></svg>
+    </a>
+    <div class="main-logo-with-text">
+      <a class="main-logo-with-text__link">
+        <svg role="img" aria-label="Логотип интернет-магазина «Кэт энерджи»."></svg>
+      </a>
+    </div>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--current" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="form-container">
+    <h1 class="form__title">Подбор программы</h1>
+    <p class="form__intro">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <section class="form-body">
+      <h2 class="visually-hidden">Анкета</h2>
+      <form class="programm-select" method="post" action="https://echo.htmlacademy.ru/">
+        <fieldset class="programm-select__form-dates personal-dates">
+          <ul class="form-dates__list">
+            <li class="form-dates__item">
+              <label class="_*_">
+                Имя:*
+                <input class="_*_ input" type="text" name="" placeholder="Барсик" required>
+              </label>
+            </li>
+            <li class="form-dates__item">
+              <label class="_*_">
+                Вес (кг):*
+                <input class="_*_ input" type="text" name="" placeholder="7" required>
+              </label>
+            </li>
+            <li class="form-dates__item">
+              <label class="_*_">
+                Возраст (лет):
+                <input class="_*_ input" type="text" name="" placeholder="7">
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="programm-select__radio-checkbox">
+          <ul class="radio-checkbox__list">
+            <li class="radio-checkbox__item">
+              <label class="_*_">
+                <input class="_*_ checkbox" type="radio" name="" value="slim" checked>
+                Похудение
+              </label>
+            </li>
+            <li class="radio-checkbox__item">
+              <label class="_*_">
+                <input class="_*_ checkbox" type="radio" name="" value="pro">
+                Набор массы
+              </label>
+            </li>
+            <li class="radio-checkbox__item">
+              <label class="_*_">
+                <input class="_*_ checkbox" type="radio" name="" value="need-advice">
+                Не знаю (нужен ваш совет)
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="programm-select__form-dates personal-contacts">
+          <legend class="">Контактные данные (владельца кота)</legend>
+          <ul class="form-dates__list">
+            <li class="form-dates__item">
+              <label class="_*_">
+                E-Mail:*
+                <input class="_*_ input" type="email" name="" placeholder="kuklachev@gmail.com" required>
+              </label>
+            </li>
+            <li class="form-dates__item">
+              <label class="_*_">
+                Телефон:*
+                <input class="_*_ input" type="tel" name="" placeholder="8 (960) 900-60-90" required>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="">
+          <legend class="">Комментарий</legend>
+          <label class="">
+            <textarea class="" name="" id="" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </label>
+        </fieldset>
+        <fieldset class="programm-select__checkbox">
+          <legend class="">Дополнительно</legend>
+          <ul class="checkbox__list">
+            <li class="checkbox__item">
+              <label class="_*_">
+                <input class="_*_ checkbox" type="checkbox" name="" checked>
+                Сахарозаменитель
+              </label>
+            </li>
+            <li class="checkbox__item">
+              <label class="_*_">
+                <input class="_*_ checkbox" type="checkbox" name="">
+                Питьевая вода
+              </label>
+            </li>
+            <li class="checkbox__item">
+              <label class="_*_">
+                <input class="_*_ checkbox" type="checkbox" name="">
+                Молоко
+              </label>
+            </li>
+            <li class="checkbox__item">
+              <label class="_*_">
+                <input class="_*_ checkbox" type="checkbox" name="">
+                Витамины
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+      <button class="button-post button" type="button">Отправить заявку</button>
+      <p class="form__notice">* — Обязательные поля</p>
+    </section>
+  </main>
+
+</body>
+
+</html>
