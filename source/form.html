@@ -35,27 +35,27 @@
   <main class="form-container">
     <h1 class="form__title">Подбор программы</h1>
     <p class="form__intro">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-    <section class="form-body">
+    <section class="form">
       <h2 class="visually-hidden">Анкета</h2>
       <form class="programm-select" method="post" action="https://echo.htmlacademy.ru/">
         <fieldset class="programm-select__form-dates personal-dates">
           <ul class="form-dates__list">
             <li class="form-dates__item">
-              <label class="_*_">
+              <label class="form-dates__label">
                 Имя:*
-                <input class="_*_ input" type="text" name="" placeholder="Барсик" required>
+                <input class="form-dates__input input" type="text" name="personal-name" placeholder="Барсик" required>
               </label>
             </li>
             <li class="form-dates__item">
-              <label class="_*_">
+              <label class="form-dates__label">
                 Вес (кг):*
-                <input class="_*_ input" type="text" name="" placeholder="7" required>
+                <input class="form-dates__input input" type="text" name="personal-weight" placeholder="7" required>
               </label>
             </li>
             <li class="form-dates__item">
-              <label class="_*_">
+              <label class="form-dates__label">
                 Возраст (лет):
-                <input class="_*_ input" type="text" name="" placeholder="7">
+                <input class="form-dates__input input" type="text" name="personal-age" placeholder="7">
               </label>
             </li>
           </ul>
@@ -63,20 +63,20 @@
         <fieldset class="programm-select__radio-checkbox">
           <ul class="radio-checkbox__list">
             <li class="radio-checkbox__item">
-              <label class="_*_">
-                <input class="_*_ checkbox" type="radio" name="" value="slim" checked>
+              <label class="radio-checkbox__label">
+                <input class="radio-checkbox__input checkbox" type="radio" name="radio-slim" value="slim" checked>
                 Похудение
               </label>
             </li>
             <li class="radio-checkbox__item">
-              <label class="_*_">
-                <input class="_*_ checkbox" type="radio" name="" value="pro">
+              <label class="radio-checkbox__label">
+                <input class="radio-checkbox__input checkbox" type="radio" name="radio-pro" value="pro">
                 Набор массы
               </label>
             </li>
             <li class="radio-checkbox__item">
-              <label class="_*_">
-                <input class="_*_ checkbox" type="radio" name="" value="need-advice">
+              <label class="radio-checkbox__label">
+                <input class="radio-checkbox__input checkbox" type="radio" name="radio-choice" value="need-advice">
                 Не знаю (нужен ваш совет)
               </label>
             </li>
@@ -86,49 +86,52 @@
           <legend class="">Контактные данные (владельца кота)</legend>
           <ul class="form-dates__list">
             <li class="form-dates__item">
-              <label class="_*_">
+              <label class="form-dates__label">
                 E-Mail:*
-                <input class="_*_ input" type="email" name="" placeholder="kuklachev@gmail.com" required>
+                <input class="form-dates__input input" type="email" name="personal-email"
+                  placeholder="kuklachev@gmail.com" required>
               </label>
             </li>
             <li class="form-dates__item">
-              <label class="_*_">
+              <label class="form-dates__label">
                 Телефон:*
-                <input class="_*_ input" type="tel" name="" placeholder="8 (960) 900-60-90" required>
+                <input class="form-dates__input input" type="tel" name="personal-tel" placeholder="8 (960) 900-60-90"
+                  required>
               </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="">
-          <legend class="">Комментарий</legend>
-          <label class="">
-            <textarea class="" name="" id="" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <fieldset class="programm-select__add-form">
+          <legend class="add-form__legent">Комментарий</legend>
+          <label class="add-form__label">
+            <textarea class="add-form__form" name="personal-comment" rows="5"
+              placeholder="Расскажите обо всех повадках кота"></textarea>
           </label>
         </fieldset>
         <fieldset class="programm-select__checkbox">
-          <legend class="">Дополнительно</legend>
+          <legend class="checkbox__legent">Дополнительно</legend>
           <ul class="checkbox__list">
             <li class="checkbox__item">
-              <label class="_*_">
-                <input class="_*_ checkbox" type="checkbox" name="" checked>
+              <label class="checkbox__label">
+                <input class="checkbox__input checkbox" type="checkbox" name="checkbox-sugar" checked>
                 Сахарозаменитель
               </label>
             </li>
             <li class="checkbox__item">
-              <label class="_*_">
-                <input class="_*_ checkbox" type="checkbox" name="">
+              <label class="checkbox__label">
+                <input class="checkbox__input checkbox" type="checkbox" name="checkbox-water">
                 Питьевая вода
               </label>
             </li>
             <li class="checkbox__item">
-              <label class="_*_">
-                <input class="_*_ checkbox" type="checkbox" name="">
+              <label class="checkbox__label">
+                <input class="checkbox__input checkbox" type="checkbox" name="checkbox-milk">
                 Молоко
               </label>
             </li>
             <li class="checkbox__item">
-              <label class="_*_">
-                <input class="_*_ checkbox" type="checkbox" name="">
+              <label class="checkbox__label">
+                <input class="checkbox__input checkbox" type="checkbox" name="checkbox-vitamins">
                 Витамины
               </label>
             </li>
@@ -141,11 +144,11 @@
   </main>
 
   <footer class="main-footer">
-    <section class="contacts">
+    <section class="footer-contacts">
       <h2 class="visually-hidden">Контакты магазина</h2>
-      <p class="notice">Приглашаем к сотрудничеству дилеров!</p>
-      <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      <div class="contacts-map"></div>
+      <p class="collaboration-notice">Приглашаем к сотрудничеству дилеров!</p>
+      <p class="footer-contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="footer-contacts-map"></div>
     </section>
     <div class="main-logo-with-text">
       <a class="main-logo-with-text__link" href="index.html">
@@ -179,11 +182,11 @@
       <h2 class="visually-hidden">Разработано в рамках обучения в HTML Академии</h2>
       <a class="" href="https://htmlacademy.ru/intensive/adaptive">
         <svg></svg>
-        <span class="visually-hidden">HTML и CSS. Адаптивная вёрстка</span>
+        <span class="visually-hidden">Перейти на сайт Академии: HTML и CSS. Адаптивная вёрстка</span>
       </a>
       <a class="" href="https://htmlacademy.ru/intensive/adaptive">
         <svg></svg>
-        <span class="visually-hidden">HTML и CSS. Адаптивная вёрстка</span>
+        <span class="visually-hidden">Перейти на сайт Академии: HTML и CSS. Адаптивная вёрстка</span>
       </a>
     </section>
   </footer>
