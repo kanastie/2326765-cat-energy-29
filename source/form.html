@@ -17,7 +17,7 @@
       </a>
     </div>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="button main-nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link" href="index.html">Главная</a>
@@ -32,13 +32,13 @@
     </nav>
   </header>
 
-  <main class="form-container">
-    <h1 class="form__title">Подбор программы</h1>
+  <main class="form form-container">
+    <h1 class="visually-hidden">Анекета подбора программы</h1>
+    <h2 class="form__title">Подбор программы</h2>
     <p class="form__intro">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     <section class="form">
-      <h2 class="visually-hidden">Анкета</h2>
       <form class="programm-select" method="post" action="https://echo.htmlacademy.ru/">
-        <fieldset class="programm-select__form-dates personal-dates">
+        <fieldset class="programm-select__personal-dates form-dates">
           <ul class="form-dates__list">
             <li class="form-dates__item">
               <label class="form-dates__label">
@@ -60,7 +60,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="programm-select__radio-checkbox">
+        <fieldset class="programm-select__aim radio-checkbox">
           <ul class="radio-checkbox__list">
             <li class="radio-checkbox__item">
               <label class="radio-checkbox__label">
@@ -82,7 +82,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="programm-select__form-dates personal-contacts">
+        <fieldset class="programm-select__personal-contacts form-dates">
           <legend class="">Контактные данные (владельца кота)</legend>
           <ul class="form-dates__list">
             <li class="form-dates__item">
@@ -101,14 +101,14 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="programm-select__add-form">
+        <fieldset class="programm-select__perconal-notice add-form">
           <legend class="add-form__legent">Комментарий</legend>
           <label class="add-form__label">
             <textarea class="add-form__form" name="personal-comment" rows="5"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </label>
         </fieldset>
-        <fieldset class="programm-select__checkbox">
+        <fieldset class="programm-select__additional-product checkbox">
           <legend class="checkbox__legent">Дополнительно</legend>
           <ul class="checkbox__list">
             <li class="checkbox__item">
@@ -137,8 +137,8 @@
             </li>
           </ul>
         </fieldset>
+        <button class="button-post button" type="button">Отправить заявку</button>
       </form>
-      <button class="button-post button" type="button">Отправить заявку</button>
       <p class="form__notice">* — Обязательные поля</p>
     </section>
   </main>
