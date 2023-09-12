@@ -1,0 +1,29 @@
+.form-dates__item {
+  list-style: none;
+}
+
+.form-dates__label {
+  font-family: $Oswald;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $add-text-color;
+  text-transform: uppercase;
+}
+
+.form-dates__input {
+  font-family: $Oswald;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $add-text-color;
+  text-transform: uppercase;
+}
+
+.form-dates__legend {
+  font-family: $Oswald;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+  color: $base-text-color;
+}

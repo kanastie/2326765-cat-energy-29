@@ -1,0 +1,24 @@
+.form__title {
+  font-family: $Oswald;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: $base-text-color;
+}
+
+.form__intro {
+  font-family: $Oswald;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $base-text-color;
+  text-transform: uppercase;
+}
+
+.form__notice {
+  font-family: $Lato;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $base-text-color;
+}

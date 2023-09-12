@@ -1,0 +1,71 @@
+.product__item {
+  list-style: none;
+}
+
+.product__title {
+  font-family: $Oswald;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.product__term {
+  font-family: $Lato;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: left;
+  color: $add-text-color;
+
+  &--additional {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.product__description {
+  font-family: $Lato;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: right;
+  color: $add-text-color;
+
+  &--additional {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.product__title-secondary {
+  font-family: $Oswald;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.product__slogan {
+  font-family: $Lato;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: $add-text-color;
+}
+
+.button-secondary {
+  font-family: $Oswald;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: $add-text-color;
+  text-transform: uppercase;
+  background-color: $add-bg-color;
+}
+

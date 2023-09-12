@@ -1,0 +1,31 @@
+.programm__item {
+  list-style: none;
+
+  background-color: $add-bg-color;
+}
+
+.programm__title {
+  font-family: $Oswald;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  color: $base-text-color;
+  text-transform: uppercase;
+}
+
+.programm__description {
+  font-family: $Lato;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $add-text-color;
+}
+
+.programm__link {
+  font-family: $Oswald;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $base-text-color;
+  text-transform: uppercase;
+}
