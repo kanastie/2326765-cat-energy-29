@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="/source/css/style.css">
 </head>
 
-<body class="page__body">
+<body class="page__body" id="page">
   <header class="main-header">
     <a class="main-header__logo-icon">
       <svg role="img" aria-label="Логотип интернет-магазина «Кэт энерджи»." xmlns="http://www.w3.org/2000/svg"
@@ -32,8 +33,8 @@
         </defs>
       </svg>
     </a>
-    <div class="main-logo-with-text">
-      <a class="main-logo-with-text__link">
+    <div class="main-header__logo-with-text site-logo">
+      <a class="site-logo__link" href="#page">
         <svg role="img" aria-label="Логотип интернет-магазина «Кэт энерджи»." width="101" height="18"
           viewBox="0 0 101 18" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_135_3354)">
@@ -72,8 +73,8 @@
         </svg>
       </a>
     </div>
+    <button class="button main-header-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <nav class="main-nav">
-      <button class="button main-nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link" href="index.html">Главная</a>
@@ -92,7 +93,7 @@
     <h1 class="visually-hidden">Анекета подбора программы</h1>
     <h2 class="form__title">Подбор программы</h2>
     <p class="form__intro">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-    <section class="form">
+    <section class="form-field">
       <form class="programm-select" method="post" action="https://echo.htmlacademy.ru/">
         <fieldset class="programm-select__personal-dates form-dates">
           <ul class="form-dates__list">
@@ -116,30 +117,30 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="programm-select__aim radio-checkbox">
-          <ul class="radio-checkbox__list">
-            <li class="radio-checkbox__item">
-              <label class="radio-checkbox__label">
-                <input class="radio-checkbox__input checkbox" type="radio" name="radio-slim" value="slim" checked>
+        <fieldset class="programm-select__aim checkbox">
+          <ul class="checkbox__list">
+            <li class="checkbox__item">
+              <label class="checkbox__label">
+                <input class="checkbox__input checkbox" type="radio" name="radio-slim" value="slim" checked>
                 Похудение
               </label>
             </li>
-            <li class="radio-checkbox__item">
-              <label class="radio-checkbox__label">
-                <input class="radio-checkbox__input checkbox" type="radio" name="radio-pro" value="pro">
+            <li class="checkbox__item">
+              <label class="checkbox__label">
+                <input class="checkbox__input checkbox" type="radio" name="radio-pro" value="pro">
                 Набор массы
               </label>
             </li>
-            <li class="radio-checkbox__item">
-              <label class="radio-checkbox__label">
-                <input class="radio-checkbox__input checkbox" type="radio" name="radio-choice" value="need-advice">
+            <li class="checkbox__item">
+              <label class="checkbox__label">
+                <input class="checkbox__input checkbox" type="radio" name="radio-choice" value="need-advice">
                 Не знаю (нужен ваш совет)
               </label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="programm-select__personal-contacts form-dates">
-          <legend class="">Контактные данные (владельца кота)</legend>
+          <legend class="form-dates__legend">Контактные данные (владельца кота)</legend>
           <ul class="form-dates__list">
             <li class="form-dates__item">
               <label class="form-dates__label">
@@ -158,14 +159,14 @@
           </ul>
         </fieldset>
         <fieldset class="programm-select__perconal-notice add-form">
-          <legend class="add-form__legent">Комментарий</legend>
-          <label class="add-form__label">
-            <textarea class="add-form__form" name="personal-comment" rows="5"
+          <legend class="form-dates__legend">Комментарий</legend>
+          <label class="form-dates__labell">
+            <textarea class="form-dates__input" name="personal-comment" rows="5"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </label>
         </fieldset>
         <fieldset class="programm-select__additional-product checkbox">
-          <legend class="checkbox__legent">Дополнительно</legend>
+          <legend class="form-dates__legend">Дополнительно</legend>
           <ul class="checkbox__list">
             <li class="checkbox__item">
               <label class="checkbox__label">
@@ -199,15 +200,16 @@
     </section>
   </main>
 
-  <footer class="main-footer">
+  <footer class="main-footer main-footer--form">
     <section class="footer-contacts">
       <h2 class="visually-hidden">Контакты магазина</h2>
-      <p class="collaboration-notice">Приглашаем к сотрудничеству дилеров!</p>
+      <p class="footer-contacts__collaboration-notice">Приглашаем к сотрудничеству дилеров!</p>
       <p class="footer-contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       <div class="footer-contacts-map"></div>
     </section>
-    <div class="main-logo-with-text">
-      <a class="main-logo-with-text__link" href="index.html">
+    <div class="footer-container">
+    <div class="site-logo">
+      <a class="site-logo__link" href="#page">
         <svg role="img" aria-label="Логотип интернет-магазина «Кэт энерджи»." width="101" height="18"
           viewBox="0 0 101 18" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_135_3354)">
@@ -281,7 +283,7 @@
     </section>
     <section class="copyright">
       <h2 class="visually-hidden">Разработано в рамках обучения в HTML Академии</h2>
-      <a class="" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <svg role="img" aria-label="Перети на сайт Академии: HTML и CSS. Адаптивная вёрстка." viewBox="0 0 112 15"
           fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -289,7 +291,7 @@
             fill="#444444" />
         </svg>
       </a>
-      <a class="" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34" fill="none" viewBox="0 0 27 34">
           <path fill="#666"
             d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0Zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26Zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24Z" />
@@ -297,6 +299,7 @@
         <span class="visually-hidden">Перейти на сайт Академии: HTML и CSS. Адаптивная вёрстка</span>
       </a>
     </section>
+    </div>
   </footer>
 
 </body>
