@@ -1,1 +1,37 @@
-// Начните писать стили здесь
+// Подключает общие стили
+@import "../sass/common/fonts.scss";
+@import "../sass/common/variables.scss";
+@import "../sass/common/global.scss";
+@import "../sass/common/visually-hidden.scss";
+@import "../sass/common/button.scss";
+
+// Подключает блоки
+@import "../sass/blocks/add-form.scss";
+@import "../sass/blocks/advantages.scss";
+@import "../sass/blocks/catalog.scss";
+@import "../sass/blocks/checkbox.scss";
+@import "../sass/blocks/copyright.scss";
+@import "../sass/blocks/example.scss";
+@import "../sass/blocks/footer-contacts-map.scss";
+@import "../sass/blocks/footer-contacts.scss";
+@import "../sass/blocks/form-container.scss";
+@import "../sass/blocks/form-dates.scss";
+@import "../sass/blocks/form-field.scss";
+@import "../sass/blocks/form.scss";
+@import "../sass/blocks/hero.scss";
+@import "../sass/blocks/input.scss";
+@import "../sass/blocks/main-container.scss";
+@import "../sass/blocks/main-footer.scss";
+@import "../sass/blocks/main-header-toggle.scss";
+@import "../sass/blocks/main-header.scss";
+@import "../sass/blocks/main-nav.scss";
+@import "../sass/blocks/main.scss";
+@import "../sass/blocks/page.scss";
+@import "../sass/blocks/product.scss";
+@import "../sass/blocks/programm-select.scss";
+@import "../sass/blocks/programm.scss";
+@import "../sass/blocks/promo.scss";
+@import "../sass/blocks/site-logo.scss";
+@import "../sass/blocks/slider.scss";
+@import "../sass/blocks/social.scss";
+
