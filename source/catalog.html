@@ -188,7 +188,7 @@
         <li class="product__item">
           <h3 class="product__title-secondary">Показать ещё <span class="_*_">100500</span> товаров</h3>
           <p class="product__slogan">На самом деле вкусов гораздо больше!</p>
-          <button class="button-secondary button" type="button">Показать все</button>
+          <button class="button button--secondary" type="button">Показать все</button>
         </li>
       </ul>
       <h2 class="catalog__title--additional">Дополнительные товары</h2>
@@ -236,12 +236,18 @@
   <footer class="main-footer main-footer--catalog">
     <section class="footer-contacts">
       <h2 class="visually-hidden">Контакты магазина</h2>
-      <p class="footer-contacts__collaboration-notice">Приглашаем к сотрудничеству дилеров!</p>
-      <p class="footer-contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      <div class="footer-contacts-map"></div>
+      <div class="footer-contacts__container">
+        <p class="footer-contacts__collaboration-notice">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="footer-contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <div class="footer-map">
+        <img class="footer-map__img" src="img/map.jpg" width="320" height="326" alt="Местоположение Кэт Энерджи.">
+      </div>
+    </section>
+    <div class=" main-footer__container--wrapper">
       <div class="site-logo">
-      <a class="site-logo__link" href="#page">
-        <svg role="img" aria-label="Логотип интернет-магазина «Кэт энерджи»." width="101" height="18"
+        <a class="site-logo__link" href="#page">
+          <svg role="img" aria-label="Логотип интернет-магазина «Кэт энерджи»." width="101" height="18"
           viewBox="0 0 101 18" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_135_3354)">
             <path
@@ -276,10 +282,10 @@
               <rect width="101" height="18" fill="white" />
             </clipPath>
           </defs>
-        </svg>
-      </a>
-    </div>
-    <section class="social">
+          </svg>
+        </a>
+      </div>
+      <section class="social">
       <h2 class="visually-hidden">Наши соцсети</h2>
       <ul class="social-list">
         <li class="social__item">
@@ -311,8 +317,8 @@
           </a>
         </li>
       </ul>
-    </section>
-    <section class="copyright">
+      </section>
+      <section class="copyright">
       <h2 class="visually-hidden">Разработано в рамках обучения в HTML Академии</h2>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <svg role="img" aria-label="Перети на сайт Академии: HTML и CSS. Адаптивная вёрстка." viewBox="0 0 112 15"
@@ -329,7 +335,8 @@
         </svg>
         <span class="visually-hidden">Перейти на сайт Академии: HTML и CSS. Адаптивная вёрстка</span>
       </a>
-    </section>
+      </section>
+    </div>
   </footer>
 
 </body>

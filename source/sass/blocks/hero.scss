@@ -4,7 +4,13 @@
   background-size: auto 302px;
 }
 
+.hero__container {
+  margin: 0 20px;
+}
+
 .hero__title {
+  margin: 0;
+
   font-family: $Oswald;
   font-size: 36px;
   line-height: 36px;
@@ -14,6 +20,8 @@
 }
 
 .hero__slogan {
+  margin: 0;
+
   font-family: $Oswald;
   font-size: 14px;
   line-height: 14px;

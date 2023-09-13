@@ -1,4 +1,10 @@
+.form {
+  margin: 0 20px;
+}
+
 .form__title {
+  margin: 0;
+
   font-family: $Oswald;
   font-size: 36px;
   line-height: 36px;
@@ -7,6 +13,8 @@
 }
 
 .form__intro {
+  margin: 0;
+
   font-family: $Oswald;
   font-size: 14px;
   line-height: 18px;
@@ -16,6 +24,8 @@
 }
 
 .form__notice {
+  margin: 0;
+
   font-family: $Lato;
   font-size: 14px;
   line-height: 16px;

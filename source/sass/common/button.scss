@@ -12,13 +12,7 @@
   cursor: pointer;
 }
 
-.button-secondary {
-  font-family: $Oswald;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  text-align: center;
+.button--secondary {
   color: $add-text-color;
-  text-transform: uppercase;
   background-color: $add-bg-color;
 }

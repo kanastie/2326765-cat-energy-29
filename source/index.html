@@ -90,11 +90,13 @@
   </header>
   <main class="main main-container">
     <section class="hero">
-      <h1 class="hero__title">Функциональное питание для котов</h1>
-      <p class="hero__slogan">Занялся собой? Займись котом!</p>
-      <img class="hero__img" src="../source/img/index/index-can-mobile-hero.png" width="280" height="270"
+      <div class="hero__container">
+        <h1 class="hero__title">Функциональное питание для котов</h1>
+        <p class="hero__slogan">Занялся собой? Займись котом!</p>
+        <img class="hero__img" src="../source/img/index/index-can-mobile-hero.png" width="280" height="270"
         alt="Кэт энерджи про с курицей.">
-      <a class="hero__programm-link button" href="form.html">Подобрать программу</a>
+        <a class="hero__programm-link button" href="form.html">Подобрать программу</a>
+    </div>
     </section>
     <section class="programm">
       <h2 class="visually-hidden">Программы питания</h2>
@@ -127,26 +129,28 @@
       </ul>
     </section>
     <section class="example">
-      <h2 class="example__title">Живой пример</h2>
-      <p class="example__intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energe
+      <div class="example__container">
+        <h2 class="example__title">Живой пример</h2>
+        <p class="example__intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energe
         Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
         часов в день. </p>
-      <dl class="example__list">
-        <div class="example__item">
-          <dt class="example__number">5 кг</dt>
+        <dl class="example__list">
+          <div class="example__item">
+            <dt class="example__number">5 кг</dt>
           <dd class="example__description">Снижение веса</dd>
-        </div>
-        <div class="example__item">
-          <dt class="example__number">60 дней</dt>
-          <dd class="example__description">Затрачено времени</dd>
-        </div>
-      </dl>
-      <p class="example__ontro">Затраты на питание: 15 000 руб.</p>
-      <div class="slider example__slider">
-        <img class="slider__img example__slider--img_before" src="../source/img/index/slider-cat-before.png" width="280"
+          </div>
+          <div class="example__item">
+            <dt class="example__number">60 дней</dt>
+            <dd class="example__description">Затрачено времени</dd>
+          </div>
+        </dl>
+        <p class="example__ontro">Затраты на питание: 15 000 руб.</p>
+        <div class="slider example__slider">
+          <img class="slider__img example__slider--img_before" src="../source/img/index/slider-cat-before.png" width="280"
           height="256" alt="Борис до перехода на питание Кэт энерджи Слим.">
-        <img class="slider__img example__slider--img_after" src="../source/img/index/slider-cat-after.png" width="280"
+          <img class="slider__img example__slider--img_after" src="../source/img/index/slider-cat-after.png" width="280"
           height="256" alt="Борис после перехода на питание Кэт энерджи Слим.">
+        </div>
       </div>
     </section>
   </main>
@@ -154,14 +158,19 @@
   <footer class="main-footer">
     <section class="footer-contacts">
       <h2 class="visually-hidden">Контакты магазина</h2>
-      <p class="footer-contacts__collaboration-notice">Приглашаем к сотрудничеству дилеров!</p>
-      <p class="footer-contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      <div class="footer-contacts-map"></div>
+      <div class="footer-contacts__container">
+        <p class="footer-contacts__collaboration-notice">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="footer-contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <div class="footer-map">
+        <img class="footer-map__img" src="img/map.jpg" width="320" height="326" alt="Местоположение Кэт Энерджи.">
+      </div>
     </section>
     <div class="main-footer__container">
-    <div class="site-logo">
-      <a class="site-logo__link" href="#page">
-        <svg role="img" aria-label="Логотип интернет-магазина «Кэт энерджи»." width="101" height="18"
+      <div class=" main-footer__container--wrapper">
+        <div class="site-logo">
+          <a class="site-logo__link" href="#page">
+            <svg role="img" aria-label="Логотип интернет-магазина «Кэт энерджи»." width="101" height="18"
           viewBox="0 0 101 18" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_135_3354)">
             <path
@@ -196,13 +205,13 @@
               <rect width="101" height="18" fill="white" />
             </clipPath>
           </defs>
-        </svg>
-      </a>
-    </div>
-    <section class="social">
-      <h2 class="visually-hidden">Наши соцсети</h2>
-      <ul class="social-list">
-        <li class="social__item">
+            </svg>
+          </a>
+        </div>
+        <section class="social">
+          <h2 class="visually-hidden">Наши соцсети</h2>
+          <ul class="social-list">
+            <li class="social__item">
           <a class="social__link" href="https://vk.com/htmlacademy">
             <svg xmlns="http://www.w3.org/2000/svg" width="27" height="17" fill="none" viewBox="0 0 27 17">
               <path fill="#666"
@@ -210,8 +219,8 @@
             </svg>
             <span class="visually-hidden">Вконтакте</span>
           </a>
-        </li>
-        <li class="social__item">
+            </li>
+            <li class="social__item">
           <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="19" fill="none" viewBox="0 0 24 19">
               <path fill="#666"
@@ -219,8 +228,8 @@
             </svg>
             <span class="visually-hidden">Ютуб</span>
           </a>
-        </li>
-        <li class="social__item">
+            </li>
+            <li class="social__item">
           <a class="social__link" href="https://t.me/htmlacademy">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="none" viewBox="0 0 20 18">
               <path fill="#666" fill-rule="evenodd"
@@ -229,10 +238,10 @@
             </svg>
             <span class="visually-hidden">Телеграм</span>
           </a>
-        </li>
-      </ul>
-    </section>
-    <section class="copyright">
+            </li>
+          </ul>
+        </section>
+        <section class="copyright">
       <h2 class="visually-hidden">Разработано в рамках обучения в HTML Академии</h2>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <svg role="img" aria-label="Перети на сайт Академии: HTML и CSS. Адаптивная вёрстка." viewBox="0 0 112 15"
@@ -249,8 +258,9 @@
         </svg>
         <span class="visually-hidden">Перейти на сайт Академии: HTML и CSS. Адаптивная вёрстка</span>
       </a>
-    </section>
-  </div>
+        </section>
+      </div>
+    </div>
   </footer>
 
 </body>
