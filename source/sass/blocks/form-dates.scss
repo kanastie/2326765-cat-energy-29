@@ -3,11 +3,17 @@
 }
 
 .form-dates__list {
+  gap: 96px;
   padding: 0;
-}
-
-.form-dates__item {
+  padding: 0;
   list-style: none;
+
+    &--personal-contacts {
+      @media (min-width: $desktop-width) {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
 }
 
 .form-dates__label {

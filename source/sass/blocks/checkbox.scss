@@ -3,11 +3,23 @@
 }
 
 .checkbox__list {
-  padding: 0;
-}
 
-.checkbox__item {
+  margin: 0;
+  padding: 0;
   list-style: none;
+
+  &--additional-product {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: auto auto;
+      row-gap: 32px;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 }
 
 .checkbox__label {

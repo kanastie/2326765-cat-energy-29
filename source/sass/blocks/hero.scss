@@ -1,15 +1,26 @@
-.hero {
-  background-image: linear-gradient(rgba($accent-color, 0.85), rgba($accent-color, 0.85)), url("/source/img/index/cat-index-background.jpg");
+.hero__wrapper {
+  position: relative;
+  margin-bottom: 138px;
+  min-height: 302px;
+  background-image: linear-gradient(
+      rgba($accent-color, 0.85),
+      rgba($accent-color, 0.85)
+    ),
+    url("/img/index/cat-index-background.jpg"),
+    linear-gradient(rgba(50, 68, 39, 1), rgba(79, 81, 78, 1));
   background-repeat: no-repeat;
   background-size: auto 302px;
+  background-position: center;
+  object-fit: contain;
 }
 
 .hero__container {
+  // position: relative;
   margin: 0 20px;
 }
 
 .hero__title {
-  margin: 0;
+  margin: 0 0 25px 0;
 
   font-family: $Oswald;
   font-size: 36px;
@@ -19,8 +30,16 @@
   color: #ffffff;
 }
 
+.hero__img {
+  position: absolute;
+  top: 135px;
+  right: 50%;
+  transform: translate(50%, 0);
+}
+
 .hero__slogan {
   margin: 0;
+  // margin-bottom: 302px;
 
   font-family: $Oswald;
   font-size: 14px;
@@ -32,6 +51,15 @@
 }
 
 .hero__programm-link {
+  // position: absolute;
+  // top: 400px;
+  // right: 50%;
+  // transform: translate(50%, 0);
+  // padding: 10px 44px;
+  // width: 296px;
+
+  display: block;
+
   font-family: $Oswald;
   font-size: 16px;
   line-height: 20px;

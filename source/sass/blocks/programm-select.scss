@@ -1,0 +1,18 @@
+.programm-select__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.programm-select__personal-dates {
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
+}
+
+.programm-select__aim {
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
+}
