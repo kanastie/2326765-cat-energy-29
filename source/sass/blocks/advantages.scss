@@ -1,0 +1,28 @@
+.advantages {
+  margin: 0 20px;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__title {
+  margin: 0;
+
+  font-family: $Oswald;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  color: $base-text-color;
+}
+
+.advantages__item {
+  list-style: none;
+
+  font-family: $Lato;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $add-text-color;
+}

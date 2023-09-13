@@ -1,0 +1,15 @@
+.promo {
+  background-image: linear-gradient(rgba($accent-color, 0.85), rgba($accent-color, 0.85)), url("/source/img/catalog/cat-catalog-background.png");
+  background-repeat: no-repeat;
+  background-size: 280px 290px;
+}
+
+.promo__description {
+  margin: 0;
+
+  font-family: $Lato;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $base-bg-color;
+}

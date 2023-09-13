@@ -1,0 +1,42 @@
+.hero {
+  background-image: linear-gradient(rgba($accent-color, 0.85), rgba($accent-color, 0.85)), url("/source/img/index/cat-index-background.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 302px;
+}
+
+.hero__container {
+  margin: 0 20px;
+}
+
+.hero__title {
+  margin: 0;
+
+  font-family: $Oswald;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero__slogan {
+  margin: 0;
+
+  font-family: $Oswald;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.hero__programm-link {
+  font-family: $Oswald;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}

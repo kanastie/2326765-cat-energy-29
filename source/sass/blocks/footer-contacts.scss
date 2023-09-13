@@ -1,0 +1,29 @@
+.footer-contacts {
+
+}
+
+.footer-contacts__container {
+  margin: 0 20px;
+  padding: 26px 0;
+}
+
+.footer-contacts__collaboration-notice {
+  margin: 0;
+
+  font-family: $Oswald;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.footer-contacts__address {
+  margin: 0;
+
+  font-family: $Lato;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $add-text-color;
+}

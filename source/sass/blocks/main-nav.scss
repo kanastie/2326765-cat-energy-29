@@ -1,0 +1,13 @@
+.main-nav__item {
+  list-style: none;
+}
+
+.main-nav__link {
+  font-family: $Oswald;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: $base-text-color;
+  text-transform: uppercase;
+}
