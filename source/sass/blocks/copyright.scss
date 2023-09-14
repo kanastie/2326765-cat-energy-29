@@ -5,6 +5,7 @@
   width: 300px;
 
   @media (min-width: $tablet-width) {
+    width: 168px;
     gap: 23px;
   }
 }
