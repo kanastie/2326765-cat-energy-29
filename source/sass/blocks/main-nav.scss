@@ -35,6 +35,11 @@
   }
 }
 
+.page__body--form .main-nav__wrapper::before,
+.page__body--catalog .main-nav__wrapper::before {
+  display: none;
+}
+
 .main-nav__list {
   position: absolute;
 
@@ -129,5 +134,12 @@
     font-size: 20px;
     line-height: 20px;
     color: $base-bg-color;
+  }
+}
+
+.page__body--form .main-nav__link,
+.page__body--catalog .main-nav__link {
+  @media (min-width: $desktop-width) {
+    color: $base-text-color;
   }
 }
