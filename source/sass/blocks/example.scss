@@ -7,19 +7,10 @@
 }
 
 .example__wrapper--container {
-  margin: 0 20px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0 110px;
-  }
 }
 
 .example__title {
-  margin: 0 0 40px 0;
+  margin: 0 20px 40px 20px;
   padding: 25px 0 0 0;
 
   font-family: $Oswald;
@@ -29,7 +20,7 @@
   color: $base-text-color;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 60px 0;
+    margin: 0 30px 60px 30px;
     padding: 45px 0 0 0;
 
     font-size: 60px;
@@ -37,34 +28,51 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 76px 0;
+    margin: 0 110px 76px 110px;
     padding: 0;
   }
 }
 
 .example__intro {
-  margin: 0 0 20px 0;
+  margin: 0 20px 20px 20px;
 
   font-family: $Lato;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   color: $add-text-color;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px 55px 30px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px 76px 110px;
+    padding: 70px 0 0 0;
+    width: 436px;
+  }
 }
 
 .example__table-wrapper {
   @media (min-width: $tablet-width) {
+    margin: 0 30px 99px 30px;
+
     display: flex;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0 110px 75px 110px;
+
     display: grid;
   }
 }
 
 .example__list {
-  margin: 0 0 20px 0;
+  margin: 0 20px 20px 20px;
   display: grid;
   grid-template-columns: 124px 124px;
   align-items: center;
@@ -74,6 +82,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     gap: 43px;
+    margin: 0 20px 20px 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -81,6 +90,8 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
+    width: 366px;
+    margin: 0 110px 55px 110px;
   }
 }
 
@@ -115,6 +126,8 @@
 }
 
 .example__ontro {
+  margin: 0 20px 20px 20px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
@@ -126,6 +139,8 @@
     grid-template-columns: 1fr 1fr;
     // align-items: center;
     // justify-content: center;
+    width: 366px;
+    margin: 0 110px 0 110px;
   }
 }
 
@@ -148,6 +163,27 @@
   }
 
   .example__slider {
-    margin: 0 0 40px 0;
+    position: relative;
+    margin: 0 20px 40px 20px;
+
+    &::before {
+      @media (min-width: $desktop-width) {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 462px;
+        background-color: $add-bg-color;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      margin: 0 30px 0 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 110px 0 110px;
+    }
   }
 }
