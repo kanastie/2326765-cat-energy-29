@@ -20,7 +20,7 @@
       content: "";
       top: 0;
       right: 0;
-      width: 720px;
+      width: 50%;
       height: 694px;
 
       background-image: linear-gradient(
@@ -30,7 +30,7 @@
         url("/img/index/cat-index-bg-desktop.png"),
         linear-gradient(rgba(50, 68, 39, 1), rgba(79, 81, 78, 1));
       background-repeat: no-repeat;
-      background-size: auto 694px;
+      background-size: cover;
     }
   }
 }
@@ -39,7 +39,7 @@
   position: absolute;
 
   // для включения block, для выключения none
-  display: block;
+  display: none;
   margin: 0 auto;
   padding: 0;
   list-style: none;

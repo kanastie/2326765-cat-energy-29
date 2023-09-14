@@ -1,4 +1,4 @@
-.programm {
+.programm__wrapper {
   margin: 0 20px;
 
   @media (min-width: $tablet-width) {
@@ -19,24 +19,34 @@
   padding: 0 0 20px 0;
   list-style: none;
 
-    @media (min-width: $tablet-width) {
-      grid-template-columns: auto;
-      gap: 30px;
-      padding-bottom: 45px;
-    }
+  @media (min-width: $tablet-width) {
+    grid-template-columns: auto;
+    gap: 30px;
+    padding-bottom: 45px;
+  }
 
-    @media (min-width: $desktop-width) {
-      grid-template-columns: 570px 570px;
-      gap: 80px;
-    }
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 570px 570px;
+    gap: 80px;
+  }
 }
 
 .programm__item {
+  padding-bottom: 20px;
   background-color: $add-bg-color;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 59px;
+  }
 }
 
 .programm__title {
-  margin: 0;
+  margin: 0 0 29px 0;
+  padding: 30px 30px 0 90px;
 
   font-family: $Oswald;
   font-size: 24px;
@@ -44,23 +54,74 @@
   font-weight: 400;
   color: $base-text-color;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 24px 0;
+    padding: 77px 53px 0;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 73px 0;
+    padding: 77px 52px 0 214px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .programm__description {
   margin: 0;
+  padding: 0 33px 23px 20px;
 
   font-family: $Lato;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   color: $add-text-color;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 52px 0;
+    padding: 0 53px 0;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 27px 0;
+    padding: 0 67px 0 52px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .programm__link {
+  margin-bottom: 20px;
+  padding: 20px 30px 20px 20px;
   font-family: $Oswald;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
   color: $base-text-color;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 57px 0;
+    padding: 0 53px 0;
+
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 59px 0;
+    padding: 0 52px 0;
+
+    font-size: 20px;
+    line-height: normal;
+  }
 }

@@ -6,7 +6,7 @@
     url("/img/index/cat-index-background.jpg"),
     linear-gradient(rgba(50, 68, 39, 1), rgba(79, 81, 78, 1));
   background-repeat: no-repeat;
-  background-size: auto 302px;
+  background-size: auto 62.5%;
   background-position: top center;
 
   @media (min-width: $tablet-width) {
@@ -79,7 +79,7 @@
 .hero__programm-link {
   display: block;
   padding: 10px 44px;
-  margin: 0 20px;
+  margin: 0 20px 20px;
 
   font-family: $Oswald;
   font-size: 16px;

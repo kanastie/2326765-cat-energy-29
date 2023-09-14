@@ -1,23 +1,49 @@
-.example {
+.example__wrapper {
   background-color: $add-bg-color;
+
+  @media (min-width: $tablet-width) {
+    background-color: $base-bg-color;
+  }
 }
 
-.example__container {
+.example__wrapper--container {
   margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px;
+  }
 }
 
 .example__title {
-  margin: 0;
+  margin: 0 0 40px 0;
+  padding: 25px 0 0 0;
 
   font-family: $Oswald;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
   color: $base-text-color;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 60px 0;
+    padding: 45px 0 0 0;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 76px 0;
+    padding: 0;
+  }
 }
 
 .example__intro {
-  margin: 0;
+  margin: 0 0 20px 0;
 
   font-family: $Lato;
   font-size: 14px;
@@ -26,7 +52,7 @@
   color: $add-text-color;
 }
 
-.example-wrapper {
+.example__table-wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -119,5 +145,9 @@
     justify-content: center;
 
     // text-align: center;
+  }
+
+  .example__slider {
+    margin: 0 0 40px 0;
   }
 }
