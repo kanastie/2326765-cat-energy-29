@@ -1,28 +1,23 @@
-.main-header__wrapper {
+.main-header__logos {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 13px 20px;
+  padding: 13px 20px 15px;
 
   @media (min-width: $tablet-width) {
-    padding: 25px 30px 0;
+    padding: 25px 30px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
-    margin: 0 auto;
+    margin: 0 110px;
     padding: 55px 0 0 0;
   }
 }
 
-.main-header__logo-with-text {
-  @media (min-width: $tablet-width) {
-    margin-right: auto;
-  }
-}
-
 .main-header__logo-icon {
+  margin-right: 56px;
+
   @media (min-width: $tablet-width) {
     width: 60px;
     margin-right: 13px;
@@ -32,6 +27,10 @@
     width: 70px;
     margin-right: 13px;
   }
+}
+
+.main-header__logo-with-text {
+  margin-right: auto;
 }
 
 .main-header__toggle {
@@ -45,7 +44,6 @@
   height: 24px;
   background-color: $base-bg-color;
   cursor: pointer;
-  border: 0;
 
   @media (min-width: $tablet-width) {
     display: none;
