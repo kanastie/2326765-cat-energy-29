@@ -255,18 +255,18 @@
             </ul>
           </fieldset>
           <fieldset class="programm-select__perconal-notice form-dates">
-            <legend class="form-dates__legend">Комментарий</legend>
-            <label class="form-dates__labell">
+            <legend class="form-dates__legend form-dates__legend--comment">Комментарий</legend>
+            <label class="form-dates__label">
               <textarea
-                class="form-dates__input"
+                class="form-dates__input form-dates__input--comment"
                 name="personal-comment"
                 rows="5"
                 placeholder="Расскажите обо всех повадках кота"
               ></textarea>
             </label>
           </fieldset>
-          <fieldset class="programm-select__additional-product checkbox">
-            <legend class="form-dates__legend">Дополнительно</legend>
+          <fieldset class="programm-select__additional checkbox">
+            <legend class="form-dates__legend form-dates__legend--additional">Дополнительно</legend>
             <ul class="checkbox__list checkbox__list--additional-product">
               <li class="checkbox__item">
                 <label class="checkbox__label">
@@ -311,11 +311,13 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button-post button" type="button">
+          <div class="form__notice-wrapper">
+            <button class="button--form-post button" type="button">
             Отправить заявку
-          </button>
+            </button>
+            <p class="form__notice">* — Обязательные поля</p>
+        </div>
         </form>
-        <p class="form__notice">* — Обязательные поля</p>
       </section>
     </main>
 

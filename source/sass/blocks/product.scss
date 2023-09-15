@@ -52,7 +52,7 @@
   grid-template-rows: 107px 40px;
   row-gap: 17px;
 
-  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
     padding: 161px 37px 40px;
@@ -110,6 +110,8 @@
     flex-direction: column;
     align-items: center;
     gap: 0;
+
+    border-bottom: 1px solid #d9d9d9;
 
     @media (min-width: $tablet-width) {
       padding: 160px 37px 40px;

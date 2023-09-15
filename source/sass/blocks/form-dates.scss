@@ -1,43 +1,128 @@
-.form-dates {
-  border: 0;
-}
-
 .form-dates__list {
-  gap: 96px;
-  padding: 0;
+  margin: 0;
   padding: 0;
   list-style: none;
 
-    &--personal-contacts {
-      @media (min-width: $desktop-width) {
-        display: flex;
-        justify-content: space-between;
-      }
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 570px;
+  }
+
+  &--personal-contacts {
+    @media (min-width: $desktop-width) {
+      display: flex;
+      justify-content: space-between;
     }
+  }
 }
 
 .form-dates__label {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
   font-family: $Oswald;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   color: $add-text-color;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
 }
 
 .form-dates__input {
+  padding: 14px 15px 13px;
+  flex-grow: 2;
+
   font-family: $Oswald;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   color: $add-text-color;
   text-transform: uppercase;
+
+  border: 1px solid #e7e7e7;
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 20px;
+
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  &--comment {
+    padding: 141px 15px;
+    min-width: 280px;
+    min-height: 150px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 40px;
+      min-width: 628px;
+      min-height: 175px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      padding: 9px 20px;
+      min-width: 1220px;
+      min-height: 175px;
+    }
+  }
 }
 
 .form-dates__legend {
+  margin: 0 0 35px 0;
+  padding: 26px 0 0;
+
   font-family: $Oswald;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
   color: $base-text-color;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 76px 0;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  &--comment {
+    margin: 0 0 38px 0;
+    padding: 0;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 0 87px 0;
+      padding: 0 40px 0 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+    }
+  }
+
+  &--additional {
+    margin: 0 0 34px 0;
+    padding: 0;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 0 57px 0;
+      padding: 0 40px 0 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+    }
+  }
 }

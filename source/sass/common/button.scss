@@ -21,3 +21,17 @@
   color: $add-text-color;
   background-color: $add-bg-color;
 }
+
+.button--form-post {
+  min-width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 45px;
+    min-width: 284px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 14px 188px;
+    min-width: 570px;
+  }
+}

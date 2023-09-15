@@ -1,18 +1,98 @@
 .programm-select__wrapper {
   @media (min-width: $desktop-width) {
+    margin: 0 110px 70px;
+
     display: flex;
     justify-content: space-between;
   }
 }
 
 .programm-select__personal-dates {
+  margin: 0 20px;
+  padding: 0 0 24px 0;
+
+  border: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+    padding: 0 40px 72px 40px;
+  }
+
   @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
     width: 570px;
   }
 }
 
 .programm-select__aim {
+  margin: 0;
+  padding: 22px 20px 19px;
+
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+
+  border-right: 0;
+  border-left: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 70px 65px;
+    padding: 23px 27px;
+
+    border-right: 1px solid #d9d9d9;
+    border-left: 1px solid #d9d9d9;
+  }
+
   @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
     width: 570px;
+  }
+}
+
+.programm-select__personal-contacts {
+  margin: 0 20px 24px;
+  padding: 0;
+
+  border: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px 65px;
+    padding: 0 40px 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px 70px;
+    padding: 0;
+  }
+}
+
+.programm-select__perconal-notice {
+  margin: 0 20px 23px;
+  padding: 0;
+
+  border: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px 70px;
+  }
+}
+
+.programm-select__additional {
+  margin: 0 20px 34px;
+  padding: 0;
+
+  border: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px 60px;
   }
 }
