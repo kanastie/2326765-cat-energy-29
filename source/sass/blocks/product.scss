@@ -37,7 +37,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin: 0 435px 87px 110px;
+      margin: 0;
+      min-width: 895px;
       border: 0;
     }
   }
@@ -322,5 +323,35 @@
 
     font-size: 16px;
     line-height: 18px;
+  }
+}
+
+.product__additional {
+  @media (min-width: $desktop-width) {
+    margin: 0 110px 87px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.product__promo {
+  margin: 35px 20px;
+  border: 1px solid $base-bg-color;
+
+  background-image: linear-gradient(
+      rgba($accent-color, 0.85),
+      rgba($accent-color, 0.85)
+    ),
+    url("/source/img/catalog/cat-catalog-background.png");
+  background-repeat: no-repeat;
+  background-size: auto 290px;
+
+  @media (min-width: $tablet-width) {
+    margin: 70px 30px 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    min-width: 245px;
   }
 }

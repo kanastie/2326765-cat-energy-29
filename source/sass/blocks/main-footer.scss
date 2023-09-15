@@ -1,6 +1,10 @@
 .main-footer--catalog,
 .main-footer--form {
   background-color: $add-bg-color;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }
 
 .main-footer__container {

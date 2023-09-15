@@ -253,7 +253,8 @@
           </li>
         </ul>
         <h2 class="catalog__title--additional">Дополнительные товары</h2>
-        <ul class="product__list product__list--additional">
+        <div class="product__additional">
+          <ul class="product__list product__list--additional">
           <li class="product__item product__item--additional">
             <h3 class="product__title product__title--additional">
               Сахарозаменитель
@@ -302,27 +303,28 @@
             </dl>
             <button class="button--buy button" type="button">Заказать</button>
           </li>
-        </ul>
-      </section>
-      <section class="promo promo__wrapper">
-        <h2 class="visually-hidden">Акция</h2>
-        <p class="promo__description">
+          </ul>
+          <aside class="product__promo promo">
+            <h2 class="visually-hidden">Акция</h2>
+            <p class="promo__description">
           Закажите все и получите чехол для кота в подарок!
-        </p>
+            </p>
+          </aside>
+        </div>
       </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer main-footer--catalog">
       <section class="main-footer__contacts contacts">
-        <h2 class="visually-hidden">Контакты магазина</h2>
         <div class="contacts__container">
-          <p class="contacts__notice">
+          <h2 class="visually-hidden">Контакты магазина</h2>
+            <p class="contacts__notice">
             Приглашаем<br />
             к сотрудничеству дилеров!
-          </p>
-          <p class="contacts__address">
-            <span></span>ул. Большая Конюшенная, д. 19/8</span><br><span>Санкт-Петербург</span>
-          </p>
+            </p>
+            <p class="contacts__address">
+              <span></span>ул. Большая Конюшенная, д. 19/8</span><br><span>Санкт-Петербург</span>
+            </p>
         </div>
         <div class="footer-map">
           <img
