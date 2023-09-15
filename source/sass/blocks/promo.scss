@@ -1,15 +1,25 @@
-.promo {
-  background-image: linear-gradient(rgba($accent-color, 0.85), rgba($accent-color, 0.85)), url("/source/img/catalog/cat-catalog-background.png");
+.promo__wrapper {
+  margin: 35px 20px;
+  border: 1px solid $base-bg-color;
+
+  background-image: linear-gradient(
+      rgba($accent-color, 0.85),
+      rgba($accent-color, 0.85)
+    ),
+    url("/source/img/catalog/cat-catalog-background.png");
   background-repeat: no-repeat;
-  background-size: 280px 290px;
+  background-size: auto 290px;
 }
 
 .promo__description {
-  margin: 0;
+  margin: 0 auto 43px;
+  padding: 186px 20px 0;
+  width: 161px;
 
   font-family: $Lato;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  text-align: center;
   color: $base-bg-color;
 }
