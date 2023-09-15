@@ -29,6 +29,18 @@
     background-color: #ebebeb;
   }
 
+  @media (min-width: $tablet-width) {
+    margin: 0 0 165px;
+    padding: 67px 30px 0;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 74px 110px 0;
+  }
+
   &--additional {
     margin: 0 20px 36px;
     padding: 25px 0 0 0;
@@ -38,18 +50,19 @@
     line-height: 24px;
     font-weight: 400;
     color: $base-text-color;
-  }
 
-  @media (min-width: $tablet-width) {
-    margin: 0 0 84px;
-    padding: 67px 30px 0;
+    @media (min-width: $tablet-width) {
+      margin: 0 30px 80px;
+      padding: 0;
 
-    font-size: 60px;
-    line-height: 60px;
-  }
+      font-size: 36px;
+      line-height: 36px;
+    }
 
-  @media (min-width: $desktop-width) {
-    padding: 74px 110px 0;
+    @media (min-width: $desktop-width) {
+      margin: 0 110px 80px;
+      padding: 0;
+    }
   }
 }
 
