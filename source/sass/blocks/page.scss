@@ -1,3 +1,21 @@
 .page__body--index .main-header__logos {
   border: 0;
 }
+
+.page__body--form .main-nav__wrapper::before,
+.page__body--catalog .main-nav__wrapper::before {
+  display: none;
+}
+
+.page__body--form .main-nav__link,
+.page__body--catalog .main-nav__link {
+  @media (min-width: $desktop-width) {
+    color: $base-text-color;
+  }
+}
+
+.page__body--index .main-nav__link--current::after {
+  @media (min-width: $desktop-width) {
+    color: $base-bg-color;
+  }
+}

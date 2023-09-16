@@ -1,8 +1,24 @@
 .example__wrapper {
-  background-color: $add-bg-color;
+  background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
     background-color: $base-bg-color;
+  }
+}
+
+.example__wrapper--container {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 462px;
+      background-image: linear-gradient(rgba(#eaeaea, 1), rgba(#eaeaea, 1));
+    }
   }
 }
 
@@ -40,6 +56,8 @@
   color: $add-text-color;
 
   @media (min-width: $tablet-width) {
+    position: relative;
+    z-index: 2;
     margin: 0 30px 55px 30px;
 
     font-size: 16px;
@@ -55,7 +73,9 @@
 
 .example__table-wrapper {
   @media (min-width: $tablet-width) {
-    margin: 0 30px 99px 30px;
+    position: relative;
+    z-index: 2;
+    margin: 0 30px 250px 30px;
 
     display: flex;
     justify-content: space-between;
@@ -158,29 +178,20 @@
 
     // text-align: center;
   }
+}
 
-  .example__slider {
+// браузер в принципе не видит селектор.блок
+.example__slider {
+  margin: 0 20px 40px 20px;
+
+  @media (min-width: $tablet-width) {
     position: relative;
-    margin: 0 20px 40px 20px;
+    z-index: 2;
+    margin: 0 30px 0 30px;
+    height: 462px;
+  }
 
-    &::before {
-      @media (min-width: $desktop-width) {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 462px;
-        background-color: $add-bg-color;
-      }
-    }
-
-    @media (min-width: $tablet-width) {
-      margin: 0 30px 0 30px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin: 0 110px 0 110px;
-    }
+  @media (min-width: $desktop-width) {
+    margin: 0 110px 0 110px;
   }
 }
