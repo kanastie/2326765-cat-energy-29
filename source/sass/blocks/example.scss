@@ -48,6 +48,7 @@
 
 .example__intro {
   margin: 0 20px 20px 20px;
+  padding: 0 0 20px 0;
 
   font-family: $Lato;
   font-size: 14px;
@@ -108,7 +109,7 @@
     align-items: center;
     justify-content: center;
     width: 366px;
-    margin: 0 110px 55px 110px;
+    margin: 0;
   }
 }
 
@@ -119,6 +120,8 @@
 }
 
 .example__number {
+  position: relative;
+
   font-family: $Oswald;
   font-size: 24px;
   line-height: 24px;
@@ -126,10 +129,41 @@
   text-align: center;
   color: $base-text-color;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: 0;
+    width: 124px;
+    height: 56px;
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
+    background-color: transparent;
+
+    @media (min-width: $tablet-width) {
+      width: 162px;
+      height: 72px;
+      top: -15px;
+      left: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 162px;
+      height: 77px;
+      top: -20px;
+      left: 0;
+    }
+  }
 }
 
 .example__description {
-  margin: 0;
+  margin: 7px 30px 0;
   align-items: center;
   justify-content: center;
 
@@ -140,6 +174,13 @@
   text-align: center;
   color: $add-text-color;
   text-transform: lowercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 11px 0 0;
+
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example__ontro {
@@ -152,12 +193,12 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 366px;
+    margin: 0;
+    padding-top: 55px;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
-    // align-items: center;
-    // justify-content: center;
-    width: 366px;
-    margin: 0 110px 0 110px;
   }
 }
 
@@ -180,7 +221,6 @@
   }
 }
 
-// браузер в принципе не видит селектор.блок
 .example__slider {
   margin: 0 20px 40px 20px;
 

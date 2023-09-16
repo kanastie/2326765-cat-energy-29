@@ -36,9 +36,9 @@
 }
 
 @media (min-width: $mobile-width) and (max-width: $tablet-width) {
-  .main-nav__toggle-button {
+  .main-nav__toggle {
     position: absolute;
-    top: -13px;
+    top: 25px;
     right: 20px;
     z-index: 2;
     display: block;
@@ -46,12 +46,13 @@
     height: 24px;
     background-color: $base-bg-color;
     cursor: pointer;
+    border: 0;
   }
 
-  .main-nav__toggle-button::before {
+  .main-nav__toggle::before {
     content: "";
     position: absolute;
-    top: 37px;
+    top: 0;
     right: 0;
     width: 24px;
     height: 2px;
@@ -59,7 +60,7 @@
     box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
   }
 
-  .main-nav--opened .main-nav__toggle-button {
+  .main-nav--opened .main-nav__toggle {
     top: 0;
     right: 0;
     left: auto;
@@ -85,7 +86,7 @@
     }
   }
 
-  .main-nav--nojs .main-nav__toggle-button {
+  .main-nav--nojs .main-nav__toggle {
     display: none;
   }
 
@@ -104,10 +105,6 @@
 
   .main-nav--opened .main-nav__list {
     display: block;
-  }
-
-  .main-nav__link--current {
-    color: $accent-color;
   }
 }
 
@@ -180,6 +177,10 @@
   text-transform: uppercase;
 
   &--current {
+    @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+      color: $accent-color;
+    }
+
     @media (min-width: $tablet-width) {
       position: relative;
 
@@ -207,7 +208,7 @@
   }
 }
 
-.main-nav__toggle-button {
+.main-nav__toggle {
   @media (min-width: $tablet-width) {
     display: none;
   }

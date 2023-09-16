@@ -19,3 +19,17 @@
     color: $base-bg-color;
   }
 }
+// не показывает белый цвет
+
+// .page__container {
+//   width: 320px;
+//   margin: 0 auto;
+
+//   @media (min-width: $tablet-width) {
+//     width: 768px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     width: 1440px;
+//   }
+// }
