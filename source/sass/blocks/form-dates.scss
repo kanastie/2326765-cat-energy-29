@@ -1,6 +1,6 @@
 .form-dates__list {
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   list-style: none;
 
   display: flex;
@@ -8,15 +8,17 @@
   gap: 14px;
 
   @media (min-width: $tablet-width) {
+    padding: 0 70px;
     gap: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 570px;
+    padding: 0;
   }
 
   &--personal-contacts {
     @media (min-width: $desktop-width) {
+      padding: 0 110px;
       display: flex;
       justify-content: space-between;
     }
@@ -42,7 +44,7 @@
 }
 
 .form-dates__input {
-  padding: 14px 15px 13px;
+  padding: 14px 14px 13px;
   flex-grow: 2;
 
   font-family: $Oswald;
@@ -62,7 +64,7 @@
   }
 
   &--comment {
-    padding: 141px 15px;
+    padding: 14px 15px;
     min-width: 280px;
     min-height: 150px;
 
@@ -83,7 +85,8 @@
 
 .form-dates__legend {
   margin: 0 0 35px 0;
-  padding: 26px 0 0;
+  padding: 0;
+  width: 65%;
 
   font-family: $Oswald;
   font-size: 24px;
@@ -93,9 +96,14 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 0 76px 0;
+    width: 80%;
 
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 39%;
   }
 
   &--comment {

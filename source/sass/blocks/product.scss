@@ -149,6 +149,8 @@
 }
 
 .product__title {
+  position: relative;
+
   margin: 0;
   width: 76px;
 
@@ -201,6 +203,9 @@
     text-align: center;
     color: #111111;
     text-transform: uppercase;
+
+    &::before {
+    }
 
     @media (min-width: $tablet-width) {
       margin: 0 0 23px;

@@ -2,29 +2,45 @@
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
-    background-color: $base-bg-color;
+    background: linear-gradient(
+      to top,
+      #eaeaea,
+      #eaeaea 462px,
+      transparent 462px,
+      transparent 100%
+    );
+  }
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(
+      to bottom,
+      transparent,
+      transparent 136px,
+      $add-bg-color 136px,
+      $add-bg-color 100%
+    );
   }
 }
 
-.example__wrapper--container {
-  position: relative;
+.example__proofs {
+  padding: 25px 20px 100px;
 
   @media (min-width: $tablet-width) {
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 462px;
-      background-image: linear-gradient(rgba(#eaeaea, 1), rgba(#eaeaea, 1));
-    }
+    padding: 43px 30px 100px;
+
+    border-top: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px 0;
+    width: 436px;
+
+    border: 0;
   }
 }
 
 .example__title {
-  margin: 0 20px 40px 20px;
-  padding: 25px 0 0 0;
+  margin: 0 0 40px;
 
   font-family: $Oswald;
   font-size: 36px;
@@ -33,22 +49,19 @@
   color: $base-text-color;
 
   @media (min-width: $tablet-width) {
-    margin: 0 30px 60px 30px;
-    padding: 45px 0 0 0;
+    margin: 0 0 60px;
 
     font-size: 60px;
     line-height: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 110px 76px 110px;
-    padding: 0;
+    margin: 0 0 146px;
   }
 }
 
 .example__intro {
-  margin: 0 20px 20px 20px;
-  padding: 0 0 20px 0;
+  margin: 0 0 34px;
 
   font-family: $Lato;
   font-size: 14px;
@@ -57,40 +70,30 @@
   color: $add-text-color;
 
   @media (min-width: $tablet-width) {
-    position: relative;
-    z-index: 2;
-    margin: 0 30px 55px 30px;
+    margin: 0 0 55px;
 
     font-size: 16px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 110px 76px 110px;
-    padding: 70px 0 0 0;
-    width: 436px;
+    margin: 0 0 84px;
   }
 }
 
 .example__table-wrapper {
   @media (min-width: $tablet-width) {
-    position: relative;
-    z-index: 2;
-    margin: 0 30px 250px 30px;
-
     display: flex;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 110px 75px 110px;
-
     display: grid;
   }
 }
 
 .example__list {
-  margin: 0 20px 20px 20px;
+  margin: 0 0 20px;
   display: grid;
   grid-template-columns: 124px 124px;
   align-items: center;
@@ -114,14 +117,39 @@
 }
 
 .example__item {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+
   @media (min-width: $tablet-width) {
-    width: 162px;
+    gap: 11px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -14px;
+    width: 124px;
+    height: 56px;
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
+
+    @media (min-width: $tablet-width) {
+      top: -15px;
+      width: 162px;
+      height: 72px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 77px;
+    }
   }
 }
 
 .example__number {
-  position: relative;
-
   font-family: $Oswald;
   font-size: 24px;
   line-height: 24px;
@@ -134,38 +162,15 @@
     font-size: 30px;
     line-height: 37px;
   }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: -14px;
-    left: 0;
-    width: 124px;
-    height: 56px;
-    border: 1px solid #cdcdcd;
-    border-radius: 3px;
-    background-color: transparent;
-
-    @media (min-width: $tablet-width) {
-      width: 162px;
-      height: 72px;
-      top: -15px;
-      left: 0;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 162px;
-      height: 77px;
-      top: -20px;
-      left: 0;
-    }
-  }
 }
 
 .example__description {
-  margin: 7px 30px 0;
-  align-items: center;
-  justify-content: center;
+  padding: 0 10px 0;
+  margin: 0 15px 0;
+
+  position: relative;
+  z-index: 1;
+  background-color: #eaeaea;
 
   font-family: $Lato;
   font-size: 12px;
@@ -176,10 +181,16 @@
   text-transform: lowercase;
 
   @media (min-width: $tablet-width) {
-    margin: 11px 0 0;
-
     font-size: 14px;
     line-height: 14px;
+
+    background-color: $base-bg-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 5px;
+
+    background-color: $add-bg-color;
   }
 }
 
@@ -216,8 +227,6 @@
   @media (min-width: $desktop-width) {
     align-items: center;
     justify-content: center;
-
-    // text-align: center;
   }
 }
 
@@ -225,10 +234,7 @@
   margin: 0 20px 40px 20px;
 
   @media (min-width: $tablet-width) {
-    position: relative;
-    z-index: 2;
     margin: 0 30px 0 30px;
-    height: 462px;
   }
 
   @media (min-width: $desktop-width) {

@@ -1,6 +1,4 @@
 .catalog__title {
-  position: relative;
-  z-index: -1;
   margin: 0 20px 41px;
   padding: 27px 0 0;
 
@@ -24,7 +22,7 @@
 
   &--additional {
     margin: 0 20px 36px;
-    padding: 25px 0 0 0;
+    padding: 0;
 
     font-family: $Oswald;
     font-size: 24px;

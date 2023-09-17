@@ -35,6 +35,32 @@
   padding-bottom: 20px;
   background-color: $add-bg-color;
 
+  &::before {
+    content: "";
+    margin: 24px 20px 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $accent-color;
+    float: left;
+
+    @media (min-width: $tablet-width) {
+      margin: 92px 93px 0 53px;
+
+      width: 200px;
+      height: 200px;
+      float: right;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 47px 62px 0 52px;
+
+      width: 100px;
+      height: 100px;
+      float: left;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding-bottom: 57px;
   }
@@ -45,9 +71,8 @@
 }
 
 .programm__title {
-  position: relative;
   margin: 0 0 29px 0;
-  padding: 30px 30px 0 90px;
+  padding: 30px 20px 0 0;
 
   font-family: $Oswald;
   font-size: 24px;
@@ -56,36 +81,9 @@
   color: $base-text-color;
   text-transform: uppercase;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 75%;
-    left: 20px;
-    transform: translate(0, -50%);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: $accent-color;
-
-    @media (min-width: $tablet-width) {
-      width: 200px;
-      height: 200px;
-      top: 0;
-      left: 70%;
-      transform: translate(0, 30%);
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 100px;
-      height: 100px;
-      top: 20%;
-      left: 52px;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     margin: 0 0 24px 0;
-    padding: 77px 53px 0;
+    padding: 77px 0 0 53px;
 
     font-size: 36px;
     line-height: 36px;
@@ -93,7 +91,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 0 73px 0;
-    padding: 77px 52px 0 214px;
+    padding: 77px 52px 0 0;
 
     font-size: 36px;
     line-height: 36px;

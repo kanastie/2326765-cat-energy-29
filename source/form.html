@@ -133,6 +133,7 @@
       </nav>
     </header>
     <script src="script.js"></script>
+
     <main class="form form-container">
       <h1 class="visually-hidden">Анекета подбора программы</h1>
       <h2 class="form__title">Подбор программы</h2>
@@ -145,7 +146,7 @@
           method="post"
           action="https://echo.htmlacademy.ru/"
         >
-          <div class="programm-select__wrapper">
+          <div class="programm-select__wrapper-with-main-dates">
             <fieldset class="programm-select__personal-dates form-dates">
               <ul class="form-dates__list">
                 <li class="form-dates__item">
@@ -225,9 +226,13 @@
             </fieldset>
           </div>
           <fieldset class="programm-select__personal-contacts form-dates">
+            <div class="block-header">
+              <div class="block-header__wrapper">
             <legend class="form-dates__legend">
               Контактные данные (владельца кота)
             </legend>
+          </div>
+          </div>
             <ul class="form-dates__list form-dates__list--personal-contacts">
               <li class="form-dates__item">
                 <label class="form-dates__label">
@@ -256,7 +261,11 @@
             </ul>
           </fieldset>
           <fieldset class="programm-select__perconal-notice form-dates">
+            <div class="block-header">
+              <div class="block-header__wrapper">
             <legend class="form-dates__legend form-dates__legend--comment">Комментарий</legend>
+            </div>
+            </div>
             <label class="form-dates__label">
               <textarea
                 class="form-dates__input form-dates__input--comment"
@@ -267,7 +276,11 @@
             </label>
           </fieldset>
           <fieldset class="programm-select__additional checkbox">
+            <div class="block-header">
+              <div class="block-header__wrapper">
             <legend class="form-dates__legend form-dates__legend--additional">Дополнительно</legend>
+          </div>
+          </div>
             <ul class="checkbox__list checkbox__list--additional-product">
               <li class="checkbox__item">
                 <label class="checkbox__label">

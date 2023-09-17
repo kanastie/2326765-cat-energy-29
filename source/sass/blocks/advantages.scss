@@ -45,6 +45,8 @@
   padding: 0 0 49px 0;
   list-style: none;
 
+  counter-reset: advantages;
+
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
@@ -93,11 +95,11 @@
     }
   }
 
-  counter-increment: number;
+  counter-increment: advantages;
 
   &::before {
     @media (min-width: $tablet-width) {
-      content: counter(number);
+      content: counter(advantages);
       position: absolute;
       z-index: -1;
       top: -5px;
