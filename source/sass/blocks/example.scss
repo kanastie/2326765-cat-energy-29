@@ -1,32 +1,87 @@
-.example {
-  background-color: $add-bg-color;
+.example__wrapper {
+  background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(
+      to top,
+      #eaeaea,
+      #eaeaea 462px,
+      transparent 462px,
+      transparent 100%
+    );
+  }
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(
+      to bottom,
+      transparent,
+      transparent 136px,
+      $add-bg-color 136px,
+      $add-bg-color 100%
+    );
+  }
 }
 
-.example__container {
-  margin: 0 20px;
+.example__proofs {
+  padding: 25px 20px 100px;
+
+  @media (min-width: $tablet-width) {
+    padding: 43px 30px 100px;
+
+    border-top: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px 0;
+    width: 436px;
+
+    border: 0;
+  }
 }
 
 .example__title {
-  margin: 0;
+  margin: 0 0 40px;
 
   font-family: $Oswald;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
   color: $base-text-color;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 60px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 146px;
+  }
 }
 
 .example__intro {
-  margin: 0;
+  margin: 0 0 34px;
 
   font-family: $Lato;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   color: $add-text-color;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 55px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 84px;
+  }
 }
 
-.example-wrapper {
+.example__table-wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -37,12 +92,8 @@
   }
 }
 
-.example__wrapper__container {
-
-}
-
 .example__list {
-  margin: 0 0 20px 0;
+  margin: 0 0 20px;
   display: grid;
   grid-template-columns: 124px 124px;
   align-items: center;
@@ -52,6 +103,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     gap: 43px;
+    margin: 0 20px 20px 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -59,12 +111,41 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
+    width: 366px;
+    margin: 0;
   }
 }
 
 .example__item {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+
   @media (min-width: $tablet-width) {
-    width: 162px;
+    gap: 11px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -14px;
+    width: 124px;
+    height: 56px;
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
+
+    @media (min-width: $tablet-width) {
+      top: -15px;
+      width: 162px;
+      height: 72px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 77px;
+    }
   }
 }
 
@@ -76,12 +157,20 @@
   text-align: center;
   color: $base-text-color;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__description {
-  margin: 0;
-  align-items: center;
-  justify-content: center;
+  padding: 0 10px 0;
+  margin: 0 15px 0;
+
+  position: relative;
+  z-index: 1;
+  background-color: #eaeaea;
 
   font-family: $Lato;
   font-size: 12px;
@@ -90,9 +179,24 @@
   text-align: center;
   color: $add-text-color;
   text-transform: lowercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+
+    background-color: $base-bg-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 5px;
+
+    background-color: $add-bg-color;
+  }
 }
 
 .example__ontro {
+  margin: 0 20px 20px 20px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
@@ -100,10 +204,12 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 366px;
+    margin: 0;
+    padding-top: 55px;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
-    // align-items: center;
-    // justify-content: center;
   }
 }
 
@@ -121,7 +227,17 @@
   @media (min-width: $desktop-width) {
     align-items: center;
     justify-content: center;
+  }
+}
 
-    // text-align: center;
+.example__slider {
+  margin: 0 20px 40px 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px 0 110px;
   }
 }

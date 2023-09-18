@@ -1,19 +1,30 @@
-.form {
-  margin: 0 20px;
-}
-
 .form__title {
-  margin: 0;
+  margin: 0 20px 37px;
+  padding: 27px 0 0 0;
 
   font-family: $Oswald;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
   color: $base-text-color;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px 54px;
+    padding: 65px 0 0 40px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px 55px;
+    padding: 74px 0 0 0;
+  }
 }
 
 .form__intro {
-  margin: 0;
+  margin: 0 20px 39px;
+  width: 230px;
 
   font-family: $Oswald;
   font-size: 14px;
@@ -21,6 +32,43 @@
   font-weight: 400;
   color: $base-text-color;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px 66px;
+    padding: 0 0 0 40px;
+    width: 323px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px 66px;
+    padding: 0;
+  }
+}
+
+.form__notice-wrapper {
+  margin: 0 20px 32px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px 60px;
+    padding: 0 40px;
+
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px 79px;
+    padding: 0;
+    gap: 80px;
+  }
 }
 
 .form__notice {
@@ -31,4 +79,10 @@
   line-height: 16px;
   font-weight: 400;
   color: $base-text-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    text-align: left;
+  }
 }

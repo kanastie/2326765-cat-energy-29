@@ -11,8 +11,8 @@
 }
 
 .advantages__title {
-  margin: 0;
-  padding-bottom: 42px;
+  margin: 0 0 42px 0;
+  padding: 20px 20px 0 0;
 
   font-family: $Oswald;
   font-size: 36px;
@@ -21,11 +21,19 @@
   color: $base-text-color;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 72px;
+    margin: 0 0 32px 0;
+    padding: 45px 30px 0 0;
+
+    font-size: 60px;
+    line-height: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 31px;
+    margin: 0 0 183px 0;
+    padding: 71px 110px 0 0;
+
+    font-size: 60px;
+    line-height: 60px;
   }
 }
 
@@ -37,28 +45,90 @@
   padding: 0 0 49px 0;
   list-style: none;
 
+  counter-reset: advantages;
+
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
-    column-gap: 37px;
-    padding-bottom: 92px;
+    row-gap: 37px;
+    margin-bottom: 47px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: space-between;
-    padding-bottom: 69px;
+    margin-bottom: 126px;
+    padding: 0;
   }
 }
 
 .advantages__item {
+  position: relative;
+  margin: 0 0 26px 0;
+  padding: 0 20px 0 80px;
+
   font-family: $Lato;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   color: $add-text-color;
 
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $accent-color;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      top: 31px;
+      left: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -110px;
+    }
+  }
+
+  counter-increment: advantages;
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: counter(advantages);
+      position: absolute;
+      z-index: -1;
+      top: -5px;
+      left: 45%;
+
+      font-family: $Oswald;
+      font-size: 280px;
+      line-height: 280px;
+      color: $add-bg-color;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -205px;
+      left: 45%;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     max-width: 250px;
+    margin: 0;
+    padding: 151px 0 57px 0;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      padding: 0;
+      min-width: 204px;
+    }
   }
 }

@@ -10,61 +10,163 @@
 
   @media (min-width: $desktop-width) {
     justify-content: space-between;
-    // width: 610px;
     margin: 0 0 0 auto;
+  }
+
+  &::before {
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      z-index: -1;
+      content: "";
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 694px;
+
+      background-image: linear-gradient(
+          rgba($accent-color, 0.85),
+          rgba($accent-color, 0.85)
+        ),
+        url("/img/index/cat-index-bg-desktop.png"),
+        linear-gradient(rgba(50, 68, 39, 1), rgba(79, 81, 78, 1));
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+@media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  .main-nav__toggle {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    z-index: 2;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: $base-bg-color;
+    cursor: pointer;
+    border: 0;
+  }
+
+  .main-nav__toggle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+    box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
+  }
+
+  .main-nav--opened .main-nav__toggle {
+    top: 0;
+    right: 0;
+    left: auto;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 30px;
+      left: -20px;
+      width: 24px;
+      height: 2px;
+      background-color: #000000;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__list {
+    position: static;
+    min-height: 0;
+  }
+
+  .main-nav--nojs .main-nav__item {
+    display: block;
+  }
+
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__list {
+    display: block;
   }
 }
 
 .main-nav__list {
-  margin: 0 0 0 auto;
+  position: absolute;
+  z-index: 1;
+
+  display: block;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
+  width: 100%;
+  background-color: $base-bg-color;
 
-  //   position: absolute;
-  //   top: 68px;
-  //   left: 0;
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  //   min-width: 320px;
-  //   background-color: $base-bg-color;
+  @media (min-width: $mobile-width) and (max-width: 768px) {
+    left: 50%;
+    transform: translate(-50%);
+  }
 
   @media (min-width: $tablet-width) {
+    top: 36px;
+    right: 30px;
+
     display: flex;
     gap: 33px;
+    width: 436px;
   }
 
   @media (min-width: $desktop-width) {
+    background: transparent;
+    top: 68px;
+    right: 110px;
+
     display: flex;
-    gap: 33px;
+    gap: 32px;
+    width: 475px;
   }
 }
 
-// .main-nav--closed .main-nav__list {
-//   @media (min-width: $mobile-width-only) {
-//     display: none;
-//   }
-// }
+.main-nav__item {
+  display: flex;
+  flex-direction: column;
+  padding: 22px 20px 24px 20px;
+  border-bottom: 1px solid #e6e6e6;
 
-// .main-nav--opened .main-nav__list {
-//   @media (min-width: $mobile-width-only) {
-//     display: block;
-//   }
-// }
+  &:first-child {
+    border-top: 1px solid #e6e6e6;
 
-// .main-nav__item {
-//   @media (min-width: $mobile-width-only) {
-//     display: flex;
-//     flex-direction: column;
-//     width: 100%;
-//     padding: 22px 0 24px 0;
-//     border-bottom: 1px solid #e6e6e6;
+    @media (min-width: $tablet-width) {
+      border: 0;
+    }
+  }
 
-//     &:first-child {
-//       border-top: 1px solid #e6e6e6;
-//     }
-//   }
-// }
+  @media (min-width: $tablet-width) {
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 33px;
+    border: 0;
+    padding: 0;
+  }
+}
 
 .main-nav__link {
   font-family: $Oswald;
@@ -74,4 +176,45 @@
   text-align: center;
   color: $base-text-color;
   text-transform: uppercase;
+
+  &--current {
+    @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+      color: $accent-color;
+    }
+
+    @media (min-width: $tablet-width) {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        width: 100%;
+        bottom: -10px;
+        height: 2px;
+        background-color: $accent-color;
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $base-bg-color;
+  }
+}
+
+.main-nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

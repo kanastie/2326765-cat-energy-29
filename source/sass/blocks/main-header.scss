@@ -1,28 +1,27 @@
-.main-header__wrapper {
+.main-header__logos {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 13px 20px;
+  padding: 13px 20px 15px;
+
+  border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
-    padding: 25px 30px 0;
+    padding: 25px 30px;
+    border: 0;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
-    margin: 0 auto;
+    margin: 0 110px;
     padding: 55px 0 0 0;
-  }
-}
-
-.main-header__logo-with-text {
-  @media (min-width: $tablet-width) {
-    margin-right: auto;
+    border: 0;
   }
 }
 
 .main-header__logo-icon {
+  margin-right: 56px;
+
   @media (min-width: $tablet-width) {
     width: 60px;
     margin-right: 13px;
@@ -34,63 +33,6 @@
   }
 }
 
-.main-header__toggle {
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translate(0, -50%);
-  z-index: 2;
-  display: block;
-  width: 24px;
-  height: 24px;
-  background-color: $base-bg-color;
-  cursor: pointer;
-  border: 0;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
+.main-header__logo-with-text {
+  margin-right: auto;
 }
-
-// не работает тк классы не в том порядке
-// .main-nav--opened .main-header__toggle::before
-.main-header__toggle::before {
-  content: "";
-  position: absolute;
-  top: 2px;
-  right: 0;
-  width: 24px;
-  height: 2px;
-  background-color: #000000;
-  box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
-}
-
-// .main-nav--closed .main-header__toggle {
-//   top: 0;
-//   right: auto;
-//   left: 0;
-
-//   &::before,
-//   &::after {
-//     content: "";
-//     position: absolute;
-//     top: 2px;
-//     left: 0px;
-//     width: 24px;
-//     height: 2px;
-//     background-color: #000000;
-//   }
-
-//   &::before {
-//     transform: rotate(45deg);
-//     box-shadow: none;
-//   }
-
-//   &::after {
-//     transform: rotate(-45deg);
-//   }
-// }
