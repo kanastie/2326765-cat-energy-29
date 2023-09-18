@@ -14,6 +14,10 @@
   display: block;
 
   &--text {
-    width: 113px;
+    font-family: $Lato;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: $add-text-color;
   }
 }

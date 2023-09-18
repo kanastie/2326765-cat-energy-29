@@ -20,7 +20,7 @@
 
 .page__body--index .main-nav__link--current::after {
   @media (min-width: $desktop-width) {
-    color: $base-bg-color;
+    background-color: $base-bg-color;
   }
 }
 // не показывает белый цвет
