@@ -7,11 +7,21 @@
 
   @media (min-width: $tablet-width) {
     background: linear-gradient(
-      to top,
-      #eaeaea,
-      #eaeaea 361px,
-      $base-bg-color 361px,
-      $base-bg-color 100%
+      to bottom,
+      $base-bg-color,
+      $base-bg-color 155px,
+      #eaeaea 155px,
+      #eaeaea 100%
+    );
+  }
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(
+      to bottom,
+      $base-bg-color,
+      $base-bg-color 136px,
+      $add-bg-color 136px,
+      $add-bg-color 100%
     );
   }
 

@@ -14,6 +14,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
+
     background: linear-gradient(
       to bottom,
       transparent,
@@ -36,6 +38,8 @@
   @media (min-width: $desktop-width) {
     padding: 0 110px 0;
     width: 436px;
+
+    flex-basis: min-content;
 
     border: 0;
   }
@@ -238,13 +242,13 @@
   margin: 0 auto 40px;
 
   width: 280px;
-  min-height: 260px;
+  height: 260px;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto 0;
 
     width: 560px;
-    min-height: 516px;
+    height: 516px;
   }
 
   @media (min-width: $desktop-width) {
