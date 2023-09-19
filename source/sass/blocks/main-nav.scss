@@ -31,6 +31,16 @@
         linear-gradient(rgba(50, 68, 39, 1), rgba(79, 81, 78, 1));
       background-repeat: no-repeat;
       background-size: cover;
+
+      @media (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            rgba($accent-color, 0.85),
+            rgba($accent-color, 0.85)
+          ),
+          url("/img/index/cat-index-bg-desktop@2x.png"),
+          linear-gradient(rgba(50, 68, 39, 1), rgba(79, 81, 78, 1));
+        background-size: cover;
+      }
     }
   }
 }
@@ -63,7 +73,6 @@
   .main-nav--opened .main-nav__toggle {
     top: 0;
     right: 0;
-    left: auto;
 
     &::before,
     &::after {
@@ -86,25 +95,26 @@
     }
   }
 
-  .main-nav--nojs .main-nav__toggle {
-    display: none;
-  }
-
-  .main-nav--nojs .main-nav__list {
-    position: static;
-    min-height: 0;
-  }
-
-  .main-nav--nojs .main-nav__item {
-    display: block;
-  }
-
   .main-nav--closed .main-nav__list {
     display: none;
   }
 
   .main-nav--opened .main-nav__list {
     display: block;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__list {
+    display: block;
+    position: relative;
+    min-height: 0;
+  }
+
+  .main-nav--nojs .main-nav__item {
+    display: flex;
   }
 }
 
@@ -117,6 +127,7 @@
   padding: 0;
   list-style: none;
   width: 100%;
+  min-width: 320px;
   background-color: $base-bg-color;
 
   @media (min-width: $mobile-width) and (max-width: 768px) {

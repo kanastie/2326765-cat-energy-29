@@ -3,11 +3,21 @@
       rgba($accent-color, 0.85),
       rgba($accent-color, 0.85)
     ),
-    url("/img/index/cat-index-background.jpg"),
+    url("/img/index/cat-index-bg-mobile.jpg"),
     linear-gradient(rgba(50, 68, 39, 1), rgba(79, 81, 78, 1));
   background-repeat: no-repeat;
   background-size: auto 62.5%;
   background-position: top center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba($accent-color, 0.85),
+        rgba($accent-color, 0.85)
+      ),
+      url("/img/index/cat-index-bg-mobile@2x.jpg"),
+      linear-gradient(rgba(50, 68, 39, 1), rgba(79, 81, 78, 1));
+    background-size: auto 62.5%;
+  }
 
   @media (min-width: $tablet-width) {
     background-image: none;
@@ -102,5 +112,9 @@
 
     font-size: 20px;
     line-height: 26px;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 305px;
   }
 }

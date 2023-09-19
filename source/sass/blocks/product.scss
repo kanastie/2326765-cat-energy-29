@@ -10,14 +10,14 @@
     margin: 0 30px 70px;
 
     grid-template-columns: 1fr 1fr;
-    gap: 141px 60px;
+    gap: 60px 60px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0 110px 76px;
 
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 144px 80px;
+    gap: 63px 80px;
   }
 
   &--additional {
@@ -55,18 +55,24 @@
   border-top: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
-    padding: 161px 37px 40px;
+    padding: 10px 37px 40px;
 
     grid-template-columns: 1fr;
-    grid-template-rows: 157px 40px;
-    row-gap: 32px;
+    grid-template-rows: auto auto auto;
+    row-gap: 0;
 
     border: 0;
-    background-color: $add-bg-color;
+    background: linear-gradient(
+      to bottom,
+      transparent,
+      transparent 81px,
+      $add-bg-color 81px,
+      $add-bg-color 100%
+    );
   }
 
   @media (min-width: $desktop-width) {
-    padding: 161px 38px 40px;
+    padding: 10px 38px 40px;
   }
 
   &--additional {
@@ -106,25 +112,52 @@
   }
 
   &--secondary--more {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+
     align-items: center;
     gap: 0;
 
     border-bottom: 1px solid #d9d9d9;
 
     @media (min-width: $tablet-width) {
-      padding: 160px 37px 40px;
+      margin-top: 81px;
+      padding: 0 37px 40px;
+
+      grid-template-rows: auto auto;
 
       border: 2px solid $add-bg-color;
-      background-color: $base-bg-color;
+      background: $base-bg-color;
     }
   }
 }
 
-.product__img {
+.product__img--wrapper {
+  width: 140px;
+  height: 107px;
+
   @media (min-width: $tablet-width) {
-    position: absolute;
+    margin: 0 auto 22px;
+    width: 200px;
+    height: 210px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 12px;
+    width: 169px;
+    height: 210px;
+  }
+}
+
+.product__link--img {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 12px;
   }
 }
 
@@ -137,7 +170,7 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
-    grid-row: 1/2;
+    grid-row: 2/2;
 
     align-items: center;
     gap: 20px;
@@ -208,8 +241,8 @@
     }
 
     @media (min-width: $tablet-width) {
-      margin: 0 0 23px;
-      padding: 0;
+      margin: 0 auto 23px;
+      padding: 160px 0 0;
       width: 170px;
 
       font-size: 20px;
@@ -306,7 +339,8 @@
 .button--buy {
   grid-column: 1/-1;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
+    margin: 32px 0 0;
     grid-column: -1/-2;
   }
 }
@@ -324,7 +358,7 @@
   color: $add-text-color;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 82px;
+    margin: 0 auto 82px;
     padding: 0;
     width: 170px;
 
@@ -349,16 +383,65 @@
       rgba($accent-color, 0.85),
       rgba($accent-color, 0.85)
     ),
-    url("/source/img/catalog/cat-catalog-background.png");
+    url("/img/catalog/cat-catalog-bg-mobile.png");
   background-repeat: no-repeat;
-  background-size: auto 290px;
+  background-size: 100% auto;
+  background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba($accent-color, 0.85),
+        rgba($accent-color, 0.85)
+      ),
+      url("/img/catalog/cat-catalog-bg-mobile@2x.png");
+    background-size: 100% auto;
+    background-position: center;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 70px 30px 75px;
+
+    background-image: linear-gradient(
+        rgba($accent-color, 0.85),
+        rgba($accent-color, 0.85)
+      ),
+      url("/img/catalog/cat-catalog-bg-tablet.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba($accent-color, 0.85),
+          rgba($accent-color, 0.85)
+        ),
+        url("/img/catalog/cat-catalog-bg-tablet@2x.png");
+      background-size: 100% auto;
+      background-position: center;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
     min-width: 245px;
+
+    background-image: linear-gradient(
+        rgba($accent-color, 0.85),
+        rgba($accent-color, 0.85)
+      ),
+      url("/img/catalog/cat-catalog-bg-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba($accent-color, 0.85),
+          rgba($accent-color, 0.85)
+        ),
+        url("/img/catalog/cat-catalog-bg-desktop@2x.png");
+      background-size: 100% auto;
+      background-position: center;
+    }
   }
 }
