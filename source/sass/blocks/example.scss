@@ -1,7 +1,9 @@
 .example__wrapper {
+  padding: 0 20px;
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
+    padding: 0 0 101px;
     background: linear-gradient(
       to top,
       #eaeaea,
@@ -23,7 +25,7 @@
 }
 
 .example__proofs {
-  padding: 25px 20px 100px;
+  padding: 25px 0 0;
 
   @media (min-width: $tablet-width) {
     padding: 43px 30px 100px;
@@ -231,13 +233,21 @@
 }
 
 .example__slider {
-  margin: 0 20px 40px 20px;
+  position: relative;
+
+  margin: 0 auto 40px;
+
+  width: 280px;
+  min-height: 260px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 30px 0 30px;
+    margin: 0 auto 0;
+
+    width: 560px;
+    min-height: 516px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 110px 0 110px;
+    margin: 0 auto 0;
   }
 }

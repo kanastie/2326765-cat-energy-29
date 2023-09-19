@@ -145,7 +145,7 @@
             <source
               media="(min-width: 1440px)"
               srcset="
-                img/index/index-can-desktop.png,
+                img/index/index-can-hero-desktop.png,
                 img/index/index-can-hero-desktop@2x.png 2x
               "
               type="image/png"
@@ -155,7 +155,7 @@
             <source
               media="(min-width: 768px)"
               srcset="
-                img/index/index-can-tablet.png,
+                img/index/index-can-hero-tablet.png,
                 img/index/index-can-hero-tablet@2x.png 2x
               "
               type="image/png"
@@ -185,7 +185,9 @@
                 по деревьям? Пора на диету! Cat Energy Slim поможет вашему
                 питомцу сбросить лишний вес.
               </p>
-              <a class="programm__link" href="#">Каталог slim</a>
+              <a class="programm__link" href="catalog.html#slim"
+                >Каталог slim</a
+              >
             </li>
             <li class="programm__item">
               <h3 class="programm__title">Набор массы</h3>
@@ -193,7 +195,7 @@
                 Заработать авторитет среди дворовых котов и даже собак? Серия
                 Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
               </p>
-              <a class="programm__link" href="#">Каталог pro</a>
+              <a class="programm__link" href="catalog.html#pro">Каталог pro</a>
             </li>
           </ul>
         </section>
@@ -249,20 +251,53 @@
             </div>
           </div>
           <div class="slider example__slider">
-            <img
-              class="slider__img example__slider--img_before"
-              src="../img/index/slider-cat-before.png"
-              width="280"
-              height="256"
-              alt="Борис до перехода на питание Кэт энерджи Слим."
-            />
-            <img
-              class="slider__img example__slider--img_after"
-              src="../img/index/slider-cat-after.png"
-              width="280"
-              height="256"
-              alt="Борис после перехода на питание Кэт энерджи Слим."
-            />
+            <div class="slider__img-wrapper slider__img-wrapper--before">
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/index/slider-cat-before-tablet.png,
+                    img/index/slider-cat-before-mobile@2x.png 2x
+                  "
+                  type="image/png"
+                  width="560"
+                  height="512"
+                />
+                <img
+                  class="slider__img slider__img--before"
+                  src="img/index/slider-cat-before-mobile.png"
+                  srcset="img/index/slider-cat-before-mobile@2x.png"
+                  width="280"
+                  height="256"
+                  alt="Борис до перехода на питание Кэт энерджи Слим."
+                />
+              </picture>
+            </div>
+            <div class="slider__img-wrapper slider__img-wrapper--after">
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/index/slider-cat-after-tablet.png,
+                    img/index/slider-cat-after-mobile@2x.png 2x
+                  "
+                  type="image/png"
+                  width="560"
+                  height="512"
+                />
+                <img
+                  class="slider__img slider__img--after"
+                  src="img/index/slider-cat-after.png"
+                  srcset="img/index/slider-cat-after@2x.png"
+                  width="280"
+                  height="256"
+                  alt="Борис после перехода на питание Кэт энерджи Слим."
+                />
+              </picture>
+            </div>
+            <div class="slider__delimiter">
+              <button class="button--slider button" type="button"></button>
+            </div>
           </div>
         </section>
       </main>
@@ -286,7 +321,6 @@
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3465.505849280853!2d30.320125994578117!3d59.93876380998261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1694865613985!5m2!1sru!2sru"
               width="320"
               height="362"
-              style="border: 0"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"

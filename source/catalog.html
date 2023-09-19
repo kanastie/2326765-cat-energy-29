@@ -140,10 +140,10 @@
       <section class="product">
         <h2 class="visually-hidden">Каталог основной продукции</h2>
         <ul class="product__list">
-          <li class="product__item">
+          <li class="product__item" id="pro">
             <a
               class="product__link--img"
-              href="catalog-cat-energy-pro-chicken-500.html"
+              href="catalog/cat-energy-pro-chicken-500.html"
             >
               <div class="product__img--wrapper">
                 <picture>
@@ -194,12 +194,12 @@
                 <dd class="product__description">700 ₽</dd>
               </dl>
             </div>
-            <a class="button--buy button" href="form.html">Заказать</a>
+            <a class="product__button--buy button" href="form.html">Заказать</a>
           </li>
           <li class="product__item">
             <a
               class="product__link--img"
-              href="catalog-cat-energy-pro-chicken-1000.html"
+              href="catalog/cat-energy-pro-chicken-1000.html"
             >
               <picture>
                 <source
@@ -248,12 +248,12 @@
                 <dd class="product__description">1000 ₽</dd>
               </dl>
             </div>
-            <a class="button--buy button" href="form.html">Заказать</a>
+            <a class="product__button--buy button" href="form.html">Заказать</a>
           </li>
           <li class="product__item">
             <a
               class="product__link--img"
-              href="catalog-cat-energy-pro-fish-500.html"
+              href="catalog/cat-energy-pro-fish-500.html"
             >
               <picture>
                 <source
@@ -302,12 +302,12 @@
                 <dd class="product__description">700 ₽</dd>
               </dl>
             </div>
-            <a class="button--buy button" href="form.html">Заказать</a>
+            <a class="product__button--buy button" href="form.html">Заказать</a>
           </li>
           <li class="product__item">
             <a
               class="product__link--img"
-              href="catalog-cat-energy-pro-fish-1000.html"
+              href="catalog/cat-energy-pro-fish-1000.html"
             >
               <picture>
                 <source
@@ -358,10 +358,10 @@
             </div>
             <a class="button--buy button" href="form.html">Заказать</a>
           </li>
-          <li class="product__item">
+          <li class="product__item" id="slim">
             <a
               class="product__link--img"
-              href="catalog-cat-energy-pro-buckweat-500.html"
+              href="catalog/cat-energy-pro-buckweat-500.html"
             >
               <picture>
                 <source
@@ -410,12 +410,12 @@
                 <dd class="product__description">400 ₽</dd>
               </dl>
             </div>
-            <a class="button--buy button" href="form.html">Заказать</a>
+            <a class="product__button--buy button" href="form.html">Заказать</a>
           </li>
           <li class="product__item">
             <a
               class="product__link--img"
-              href="catalog-cat-energy-pro-buckweat-1000.html"
+              href="catalog/cat-energy-pro-buckweat-1000.html"
             >
               <picture>
                 <source
@@ -466,12 +466,12 @@
                 <dd class="product__description">700 ₽</dd>
               </dl>
             </div>
-            <a class="button--buy button" href="form.html">Заказать</a>
+            <a class="product__button--buy button" href="form.html">Заказать</a>
           </li>
           <li class="product__item">
             <a
               class="product__link--img"
-              href="catalog-cat-energy-pro-rice-500.html"
+              href="catalog/cat-energy-pro-rice-500.html"
             >
               <picture>
                 <source
@@ -520,7 +520,7 @@
                 <dd class="product__description">500 ₽</dd>
               </dl>
             </div>
-            <a class="button--buy button" href="form.html">Заказать</a>
+            <a class="product__button--buy button" href="form.html">Заказать</a>
           </li>
           <li class="product__item product__item--secondary--more">
             <h3 class="product__title product__title--secondary--more">
@@ -554,7 +554,9 @@
                   200 ₽
                 </dd>
               </dl>
-              <button class="button--buy button" type="button">Заказать</button>
+              <a class="product__button--buy button" href="form.html"
+                >Заказать</a
+              >
             </li>
             <li class="product__item product__item--additional">
               <h3 class="product__title product__title--additional">
@@ -570,7 +572,9 @@
                   50 ₽
                 </dd>
               </dl>
-              <button class="button--buy button" type="button">Заказать</button>
+              <a class="product__button--buy button" href="form.html"
+                >Заказать</a
+              >
             </li>
             <li class="product__item product__item--additional">
               <h3 class="product__title product__title--additional">Молоко</h3>
@@ -582,7 +586,9 @@
                   100 ₽
                 </dd>
               </dl>
-              <button class="button--buy button" type="button">Заказать</button>
+              <a class="product__button--buy button" href="form.html"
+                >Заказать</a
+              >
             </li>
             <li class="product__item product__item--additional">
               <h3 class="product__title product__title--additional">
@@ -598,7 +604,9 @@
                   300 ₽
                 </dd>
               </dl>
-              <button class="button--buy button" type="button">Заказать</button>
+              <a class="product__button--buy button" href="form.html"
+                >Заказать</a
+              >
             </li>
           </ul>
           <aside class="product__promo promo">
@@ -628,9 +636,8 @@
         <div class="footer-map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3465.505849280853!2d30.320125994578117!3d59.93876380998261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1694865613985!5m2!1sru!2sru"
-            width="320"
-            height="362"
-            style="border: 0"
+            width="100%"
+            height="100%"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"

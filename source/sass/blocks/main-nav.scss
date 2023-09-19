@@ -45,7 +45,7 @@
   }
 }
 
-@media (min-width: $mobile-width) and (max-width: $tablet-width) {
+@media (min-width: 240px) and (max-width: $tablet-width) {
   .main-nav__toggle {
     position: absolute;
     top: 25px;
