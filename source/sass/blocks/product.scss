@@ -230,6 +230,8 @@
   }
 
   &--secondary--more {
+    position: relative;
+
     margin: 0 0 8px;
     padding: 78px 20px 0;
     width: auto;
@@ -243,6 +245,27 @@
     text-transform: uppercase;
 
     &::before {
+      content: "";
+      position: absolute;
+      top: 25px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 30px;
+      height: 30px;
+
+      background-image: url("../../img/catalog/plus.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      @media (min-width: $tablet-width) {
+        top: 50px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 60px;
+        height: 60px;
+
+        background-image: url("../../img/catalog/plus-tablet.svg");
+      }
     }
 
     @media (min-width: $tablet-width) {

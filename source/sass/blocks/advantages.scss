@@ -74,6 +74,10 @@
   font-weight: 400;
   color: $add-text-color;
 
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -129,6 +133,38 @@
       margin: 0;
       padding: 0;
       min-width: 204px;
+    }
+  }
+
+  &--health {
+    &::after {
+      background-image: url("../../img/index/advantages-leaf.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &--simple {
+    &::after {
+      background-image: url("../../img/index/advantages-container.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &--time {
+    &::after {
+      background-image: url("../../img/index/advantages-fork-knife.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &--fast {
+    &::after {
+      background-image: url("../../img/index/advantages-clock.svg");
+      background-repeat: no-repeat;
+      background-position: center;
     }
   }
 }

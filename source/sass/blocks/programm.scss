@@ -32,7 +32,6 @@
 }
 
 .programm__item {
-  padding-bottom: 20px;
   background-color: $add-bg-color;
 
   &::before {
@@ -68,6 +67,70 @@
   @media (min-width: $desktop-width) {
     padding-bottom: 59px;
   }
+
+  &--slim {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 21px;
+      left: 25px;
+      width: 36px;
+      height: 50px;
+      background-image: url("../../img/index/cat-slim.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      @media (min-width: $tablet-width) {
+        top: 81px;
+        left: auto;
+        right: 130px;
+        width: 140px;
+        height: 194px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 41px;
+        left: 62px;
+        right: auto;
+        width: 70px;
+        height: 97px;
+      }
+    }
+  }
+
+  &--pro {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 35px;
+      left: 11px;
+      width: 67px;
+      height: 28px;
+      background-image: url("../../img/index/cat-pro.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      @media (min-width: $tablet-width) {
+        top: 135px;
+        left: auto;
+        right: 60px;
+        width: 268px;
+        height: 112px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 67px;
+        left: 33px;
+        right: auto;
+        width: 134px;
+        height: 56px;
+      }
+    }
+  }
 }
 
 .programm__title {
@@ -100,7 +163,7 @@
 
 .programm__description {
   position: relative;
-  margin: 0 33px 15px 20px;
+  margin: 0 33px 0 20px;
   padding: 0 0 23px;
 
   font-family: $Lato;
@@ -128,7 +191,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 52px 0;
+    margin: 0 0 48px 0;
     padding: 0 316px 0 52px;
 
     font-size: 16px;
@@ -136,7 +199,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 27px 0;
+    margin: 0 0 23px 0;
     padding: 0 67px 0 52px;
 
     font-size: 16px;
@@ -145,8 +208,10 @@
 }
 
 .programm__link {
-  margin-bottom: 20px;
-  padding: 20px 30px 20px 20px;
+  display: flex;
+  align-items: center;
+
+  padding: 15px 30px 18px 20px;
   font-family: $Oswald;
   font-size: 16px;
   line-height: 16px;
@@ -154,8 +219,11 @@
   color: $base-text-color;
   text-transform: uppercase;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
-    margin: 0 0 57px 0;
     padding: 0 53px 0;
 
     font-size: 20px;
@@ -163,10 +231,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 59px 0;
     padding: 0 52px 0;
 
     font-size: 20px;
     line-height: normal;
   }
+}
+
+.programm__icon {
+  margin-left: 15px;
 }
