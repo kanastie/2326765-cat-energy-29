@@ -22,12 +22,12 @@
 
   &--additional {
     margin: 0 20px;
-    padding: 13px 0 19px;
+    padding: 0;
 
     grid-template-columns: auto;
 
     @media (min-width: $tablet-width) {
-      margin: 0 30px;
+      margin: 0 40px;
       padding: 0;
 
       grid-template-columns: auto;
@@ -54,11 +54,15 @@
 
   border-top: 1px solid #d9d9d9;
 
+  &:last-of-type {
+    border-bottom: 1px solid #d9d9d9;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 10px 37px 40px;
 
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto 40px;
     row-gap: 0;
 
     border: 0;
@@ -79,7 +83,9 @@
     margin: 0;
     padding: 13px 0 19px 0;
 
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto 40px;
+
+    background: none;
 
     &:first-of-type {
       border-top: 1px solid #d9d9d9;
@@ -91,6 +97,7 @@
 
       grid-template-columns: 1fr 1fr;
       grid-template-rows: auto 40px;
+      row-gap: 20px;
 
       border-bottom: 1px solid #cdcdcd;
       background-color: $base-bg-color;
@@ -113,6 +120,7 @@
 
   &--secondary--more {
     display: grid;
+    grid-template-columns: 1fr;
 
     align-items: center;
     gap: 0;
@@ -169,6 +177,7 @@
   gap: 14px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
     grid-column: 1/2;
     grid-row: 2/2;
 
@@ -225,6 +234,8 @@
   }
 
   &--secondary--more {
+    position: relative;
+
     margin: 0 0 8px;
     padding: 78px 20px 0;
     width: auto;
@@ -238,6 +249,27 @@
     text-transform: uppercase;
 
     &::before {
+      content: "";
+      position: absolute;
+      top: 25px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 30px;
+      height: 30px;
+
+      background-image: url("../../img/catalog/plus.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      @media (min-width: $tablet-width) {
+        top: 50px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 60px;
+        height: 60px;
+
+        background-image: url("../../img/catalog/plus-tablet.svg");
+      }
     }
 
     @media (min-width: $tablet-width) {
@@ -285,8 +317,12 @@
   color: $add-text-color;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 5px;
+
     font-size: 16px;
     line-height: 20px;
+
+    border-bottom: 1px solid #cdcdcd;
   }
 
   &--additional {
@@ -297,6 +333,8 @@
       font-size: 16px;
       line-height: 20px;
       text-align: right;
+
+      border-bottom: 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -316,8 +354,12 @@
   color: $add-text-color;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 5px;
+
     font-size: 16px;
     line-height: 20px;
+
+    border-bottom: 1px solid #cdcdcd;
   }
 
   &--additional {
@@ -327,6 +369,8 @@
     @media (min-width: $tablet-width) {
       font-size: 16px;
       line-height: 20px;
+
+      border-bottom: 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -336,11 +380,11 @@
   }
 }
 
-.button--buy {
+.product__button--buy {
   grid-column: 1/-1;
 
-  @media (min-width: $tablet-width) {
-    margin: 32px 0 0;
+  @media (min-width: $desktop-width) {
+    margin: 0;
     grid-column: -1/-2;
   }
 }
@@ -376,6 +420,8 @@
 }
 
 .product__promo {
+  position: relative;
+
   margin: 35px 20px;
   border: 1px solid $base-bg-color;
 
@@ -387,6 +433,34 @@
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 58px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 78px;
+    height: 80px;
+    background-image: url("../../img/catalog/icon-gift.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      left: 77px;
+      width: 80px;
+      height: 82px;
+      transform: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 56px;
+      left: auto;
+      right: 82px;
+      width: 80px;
+      height: 83px;
+      transform: none;
+    }
+  }
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(

@@ -13,8 +13,10 @@
   }
 
   &--additional-product {
+    margin: 0 20px;
     @media (min-width: $tablet-width) {
-      padding: 0 40px;
+      margin: 0 70px;
+      padding: 0;
 
       display: grid;
       grid-template-columns: auto auto;
@@ -22,7 +24,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 0;
+      margin: 0 110px;
       grid-template-columns: auto auto auto auto;
     }
   }

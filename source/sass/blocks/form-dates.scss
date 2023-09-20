@@ -64,18 +64,19 @@
   }
 
   &--comment {
+    margin: 0 20px;
     padding: 14px 15px;
     min-width: 280px;
     min-height: 150px;
 
     @media (min-width: $tablet-width) {
-      margin: 0 40px;
+      margin: 0 70px;
       min-width: 628px;
       min-height: 175px;
     }
 
     @media (min-width: $desktop-width) {
-      margin: 0;
+      margin: 0 110px;
       padding: 9px 20px;
       min-width: 1220px;
       min-height: 175px;
@@ -86,7 +87,7 @@
 .form-dates__legend {
   margin: 0 0 35px 0;
   padding: 0;
-  width: 65%;
+  max-width: 190px;
 
   font-family: $Oswald;
   font-size: 24px;
@@ -96,14 +97,10 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 0 76px 0;
-    width: 80%;
+    max-width: 515px;
 
     font-size: 36px;
     line-height: 36px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 39%;
   }
 
   &--comment {
@@ -112,7 +109,7 @@
 
     @media (min-width: $tablet-width) {
       margin: 0 0 87px 0;
-      padding: 0 40px 0 40px;
+      padding: 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -126,11 +123,6 @@
 
     @media (min-width: $tablet-width) {
       margin: 0 0 57px 0;
-      padding: 0 40px 0 40px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: 0;
     }
   }
 }

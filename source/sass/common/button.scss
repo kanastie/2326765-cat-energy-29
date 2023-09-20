@@ -16,8 +16,6 @@
 }
 
 .button--secondary {
-  width: 100%;
-
   color: $add-text-color;
   background-color: $add-bg-color;
 }
@@ -34,4 +32,24 @@
     padding: 14px 188px;
     min-width: 570px;
   }
+}
+
+.button--slider {
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+
+  min-width: 40px;
+  min-height: 40px;
+
+  border: 2px solid #666666;
+  border-radius: 50%;
+  background-color: $base-bg-color;
+
+  background-image: url("../../img/index/slider-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
