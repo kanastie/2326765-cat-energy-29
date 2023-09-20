@@ -21,7 +21,7 @@
   }
 
   &--additional {
-    margin: 0 20px 36px;
+    margin: 0 0 36px;
     padding: 0;
 
     font-family: $Oswald;
@@ -39,7 +39,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin: 0 110px 80px;
+      margin: 0 0 80px;
       padding: 0;
     }
   }

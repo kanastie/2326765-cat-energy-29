@@ -22,7 +22,7 @@
 
   &--additional {
     margin: 0 20px;
-    padding: 13px 0 19px;
+    padding: 0;
 
     grid-template-columns: auto;
 
@@ -53,6 +53,10 @@
   row-gap: 17px;
 
   border-top: 1px solid #d9d9d9;
+
+  &:last-of-type {
+    border-bottom: 1px solid #d9d9d9;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 10px 37px 40px;
@@ -416,6 +420,8 @@
 }
 
 .product__promo {
+  position: relative;
+
   margin: 35px 20px;
   border: 1px solid $base-bg-color;
 
@@ -427,6 +433,34 @@
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 58px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 78px;
+    height: 80px;
+    background-image: url("../../img/catalog/icon-gift.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      left: 77px;
+      width: 80px;
+      height: 82px;
+      transform: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 56px;
+      left: auto;
+      right: 82px;
+      width: 80px;
+      height: 83px;
+      transform: none;
+    }
+  }
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(
