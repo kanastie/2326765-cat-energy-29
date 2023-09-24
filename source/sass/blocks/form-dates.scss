@@ -25,10 +25,18 @@
   }
 }
 
+.form-dates__item {
+  display: flex;
+}
+
 .form-dates__label {
   display: flex;
   align-items: center;
   gap: 13px;
+  width: 100%;
+  flex-basis: auto;
+  // flex: 0 1 auto;
+  // flex-grow: 0;
 
   font-family: $Oswald;
   font-size: 16px;
@@ -44,8 +52,9 @@
 }
 
 .form-dates__input {
-  padding: 14px 14px 13px;
-  flex-grow: 2;
+  padding: 14px 48px 13px 15px;
+  width: auto;
+  flex-grow: 1;
 
   font-family: $Oswald;
   font-size: 16px;
@@ -57,10 +66,46 @@
   border: 1px solid #e7e7e7;
 
   @media (min-width: $tablet-width) {
-    padding: 11px 20px;
+    padding: 11px 35px 11px 20px;
 
     font-size: 20px;
     line-height: normal;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 37px 11px 20px;
+  }
+
+  &--mail {
+    background-image: url("../../img/form/envelope.svg");
+    background-repeat: no-repeat;
+    background-size: 17px 13px;
+    background-position-y: center;
+    background-position-x: calc(100% - 12px);
+
+    @media (min-width: $tablet-width) {
+      background-position-x: calc(100% - 15px);
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position-x: calc(100% - 17px);
+    }
+  }
+
+  &--tel {
+    background-image: url("../../img/form/phone.svg");
+    background-repeat: no-repeat;
+    background-size: 15px 16px;
+    background-position-y: center;
+    background-position-x: calc(100% - 14px);
+
+    @media (min-width: $tablet-width) {
+      background-position-x: calc(100% - 15px);
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position-x: calc(100% - 17px);
+    }
   }
 
   &--comment {

@@ -13,11 +13,29 @@
   border: 0;
   background-color: $accent-color;
   cursor: pointer;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba($base-bg-color, 0.3);
+    background-color: #5eaa2f;
+  }
 }
 
 .button--secondary {
   color: $add-text-color;
   background-color: $add-bg-color;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: $add-text-color;
+    background-color: #ebebeb;
+  }
 }
 
 .button--form-post {
