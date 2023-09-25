@@ -12,12 +12,20 @@
 
 .copyright__link {
   display: block;
+}
 
-  &--text {
-    font-family: $Lato;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 400;
-    color: $add-text-color;
-  }
+.copyright__text {
+  font-family: $Lato;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $add-text-color;
+}
+
+.copyright__link:hover path {
+  fill: $accent-color;
+}
+
+.copyright__link:active path {
+  fill: rgba($accent-color, 0.3);
 }

@@ -30,6 +30,7 @@
 }
 
 .form-dates__label {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 13px;
@@ -52,7 +53,7 @@
 }
 
 .form-dates__input {
-  padding: 14px 48px 13px 15px;
+  padding: 14px 15px 13px 15px;
   width: auto;
   flex-grow: 1;
 
@@ -64,6 +65,7 @@
   text-transform: uppercase;
 
   border: 1px solid #e7e7e7;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     padding: 11px 35px 11px 20px;
@@ -110,7 +112,7 @@
 
   &--comment {
     margin: 0 20px;
-    padding: 14px 15px;
+    padding: 14px 14px;
     min-width: 280px;
     min-height: 150px;
 

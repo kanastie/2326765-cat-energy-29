@@ -1,4 +1,4 @@
-.main-nav__wrapper {
+.main-nav--wrapper {
   display: flex;
   flex-direction: column;
 
@@ -31,6 +31,7 @@
         linear-gradient(rgba(50, 68, 39, 1), rgba(79, 81, 78, 1));
       background-repeat: no-repeat;
       background-size: cover;
+      background-position: center;
 
       @media (min-resolution: 2dppx) {
         background-image: linear-gradient(
@@ -225,14 +226,6 @@
     font-size: 20px;
     line-height: 20px;
     color: $base-bg-color;
-
-    &:hover {
-      color: rgba(255, 255, 255, 0.7);
-    }
-
-    &:active {
-      color: rgba(255, 255, 255, 0.3);
-    }
   }
 }
 

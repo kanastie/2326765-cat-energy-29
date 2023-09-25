@@ -67,7 +67,25 @@
   border-radius: 50%;
   background-color: $base-bg-color;
 
-  background-image: url("../../img/index/slider-arrow.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  &:hover {
+    background-color: $base-bg-color;
+    border: 2px solid $accent-color;
+  }
+
+  &:active {
+    background-color: $base-bg-color;
+    border: 2px solid rgba($accent-color, 0.3);
+  }
+}
+
+.button--slider svg {
+  margin-top: 3px;
+}
+
+.button--slider:hover path {
+  fill: $accent-color;
+}
+
+.button--slider:active path {
+  fill: rgba($accent-color, 0.3);
 }

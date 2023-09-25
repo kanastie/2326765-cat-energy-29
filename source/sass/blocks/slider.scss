@@ -55,4 +55,12 @@
 
   border-radius: 2px;
   background-color: #666666;
+
+  &:hover {
+    background-color: $accent-color;
+  }
+
+  &:active {
+    background-color: rgba($accent-color, 0.3);
+  }
 }

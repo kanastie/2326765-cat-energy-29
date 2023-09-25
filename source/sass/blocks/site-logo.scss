@@ -1,0 +1,11 @@
+.site-logo--wrapper {
+  margin-right: auto;
+}
+
+.site-logo__logo-with-text:hover path {
+  fill: rgba(#111111, 0.7);
+}
+
+.site-logo__logo-with-text:active path {
+  fill: rgba(#111111, 0.3);
+}

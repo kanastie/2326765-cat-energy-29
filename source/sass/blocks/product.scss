@@ -139,7 +139,7 @@
   }
 }
 
-.product__img--wrapper {
+.product__img-wrapper {
   width: 140px;
   height: 107px;
 
@@ -156,7 +156,7 @@
   }
 }
 
-.product__link--img {
+.product__link-img {
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
     grid-row: 1/2;
@@ -380,7 +380,7 @@
   }
 }
 
-.product__button--buy {
+.product__button-buy {
   grid-column: 1/-1;
 
   @media (min-width: $desktop-width) {

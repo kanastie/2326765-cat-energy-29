@@ -5,3 +5,11 @@
   padding: 0;
   list-style: none;
 }
+
+.social__link:hover path {
+  fill: $accent-color;
+}
+
+.social__link:active path {
+  fill: rgba($accent-color, 0.3);
+}
