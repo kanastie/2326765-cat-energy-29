@@ -1,9 +1,14 @@
+.main-header--wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .main-header__logos {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 13px 20px 15px;
+  padding: 13px 20px 10px;
 
   border-bottom: 1px solid #d9d9d9;
 

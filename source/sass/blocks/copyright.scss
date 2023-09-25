@@ -3,9 +3,11 @@
   justify-content: space-between;
   align-items: center;
   width: 280px;
+  margin-top: 20px;
 
   @media (min-width: $tablet-width) {
     width: 168px;
+    margin-top: 0;
     gap: 23px;
   }
 }
@@ -20,6 +22,10 @@
   line-height: 20px;
   font-weight: 400;
   color: $add-text-color;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 5px;
+  }
 }
 
 .copyright__link:hover path {

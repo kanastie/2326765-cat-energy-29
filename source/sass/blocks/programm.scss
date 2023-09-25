@@ -14,9 +14,9 @@
 .programm__list {
   display: grid;
   grid-template-columns: auto;
-  gap: 20px;
+  gap: 23px;
   margin: 0;
-  padding: 0 0 20px 0;
+  padding: 0 0 0 0;
   list-style: none;
 
   @media (min-width: $tablet-width) {
@@ -28,6 +28,7 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 570px 570px;
     gap: 80px;
+    padding-bottom: 0;
   }
 }
 
@@ -44,7 +45,7 @@
     float: left;
 
     @media (min-width: $tablet-width) {
-      margin: 92px 93px 0 53px;
+      margin: 92px 65px 0 53px;
 
       width: 200px;
       height: 200px;
@@ -85,7 +86,7 @@
       @media (min-width: $tablet-width) {
         top: 81px;
         left: auto;
-        right: 130px;
+        right: 93px;
         width: 140px;
         height: 194px;
       }
@@ -117,7 +118,7 @@
       @media (min-width: $tablet-width) {
         top: 135px;
         left: auto;
-        right: 60px;
+        right: 28px;
         width: 268px;
         height: 112px;
       }
@@ -135,7 +136,7 @@
 
 .programm__title {
   margin: 0 0 29px 0;
-  padding: 30px 20px 0 0;
+  padding: 30px 20px 0;
 
   font-family: $Oswald;
   font-size: 24px;
@@ -191,7 +192,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 48px 0;
+    margin: 0 0 50px 0;
     padding: 0 316px 0 52px;
 
     font-size: 16px;
@@ -199,10 +200,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 23px 0;
-    padding: 0 67px 0 52px;
+    margin: 0 0 26px 0;
+    padding: 0 50px 0 52px;
 
-    font-size: 16px;
+    font-size: 15px;
     line-height: 24px;
   }
 }
@@ -211,7 +212,7 @@
   display: flex;
   align-items: center;
 
-  padding: 15px 30px 18px 20px;
+  padding: 18px 20px 20px 20px;
   font-family: $Oswald;
   font-size: 16px;
   line-height: 16px;
@@ -238,6 +239,15 @@
   }
 }
 
+.programm__link-text {
+  width: fit-content;
+}
+
 .programm__icon {
   margin-left: 15px;
+  height: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 25px;
+  }
 }

@@ -21,7 +21,7 @@
 
       display: grid;
       grid-template-columns: auto auto;
-      row-gap: 32px;
+      row-gap: 46px;
     }
 
     @media (min-width: $desktop-width) {
@@ -74,7 +74,9 @@
   border: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
-    top: 0;
+    top: -6px;
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -110,6 +112,8 @@
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
+
+    background-size: 24px 18px;
   }
 }
 

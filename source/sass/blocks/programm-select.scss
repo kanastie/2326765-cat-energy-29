@@ -36,7 +36,7 @@
   border-left: 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0 70px 65px;
+    margin: 0 70px 50px;
     padding: 23px 27px;
 
     border-right: 1px solid #d9d9d9;
@@ -51,14 +51,14 @@
 }
 
 .programm-select__personal-contacts {
-  margin: 0 0 24px;
+  margin: 0;
   padding: 0;
   display: block;
 
   border: 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 65px;
+    margin: 0 0 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -67,14 +67,14 @@
 }
 
 .programm-select__perconal-notice {
-  margin: 0 0 23px;
+  margin: 0;
   padding: 0;
   display: block;
 
   border: 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 65px;
+    margin: 0 0 35px;
   }
 
   @media (min-width: $desktop-width) {

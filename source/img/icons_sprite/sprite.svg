@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg">
-  <symbol viewBox="0 0 32 12" id="programm-arrow">
+  <symbol viewBox="0 0 32 10" id="programm-arrow">
       <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
       <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" />
     </symbol>

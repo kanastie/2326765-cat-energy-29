@@ -2,10 +2,28 @@
   margin-right: auto;
 }
 
+.site-logo__logo-with-text svg {
+  width: 101px;
+  height: 18px;
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 21px;
+  }
+}
+
 .site-logo__logo-with-text:hover path {
   fill: rgba(#111111, 0.7);
 }
 
 .site-logo__logo-with-text:active path {
   fill: rgba(#111111, 0.3);
+}
+
+.site-logo--footer {
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
