@@ -27,6 +27,7 @@
 }
 
 .main-header__logo-icon {
+  cursor: pointer;
   margin-right: 56px;
 
   @media (min-width: $tablet-width) {
@@ -38,4 +39,12 @@
     width: 70px;
     margin-right: 14px;
   }
+}
+
+.main-header__logos:hover {
+  opacity: 80%;
+}
+
+.main-header__logos:active {
+  opacity: 60%;
 }
