@@ -50,6 +50,16 @@
   }
 }
 
+.checkbox__label:hover .checkbox__mark,
+.checkbox__label:hover .checkbox__mark-add {
+  opacity: 70%;
+}
+
+.checkbox__label:focus-within .checkbox__mark,
+.checkbox__label:focus-within .checkbox__mark-add {
+  box-shadow: 0 0 0 2px rgba($accent-color, 1);
+}
+
 .checkbox__mark {
   position: absolute;
   top: -4px;
