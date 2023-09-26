@@ -31,7 +31,9 @@
   display: flex;
 
   &--personal-contacts {
-    width: 50%;
+    @media (min-width: $desktop-width) {
+      width: 50%;
+    }
   }
 }
 

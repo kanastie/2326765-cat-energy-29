@@ -49,13 +49,15 @@ const scripts = () => {
 
 const optimizeImages = () => {
   return gulp
-    .src("source/img/**/*.{jpg,png}")
+    .src("source/img/**/*.{jpg,png,webp}")
     .pipe(squoosh())
     .pipe(gulp.dest("build/img"));
 };
 
 const copyImages = () => {
-  return gulp.src("source/img/**/*.{jpg,png}").pipe(gulp.dest("build/img"));
+  return gulp
+    .src("source/img/**/*.{jpg,png,webp}")
+    .pipe(gulp.dest("build/img"));
 };
 
 // WebP
