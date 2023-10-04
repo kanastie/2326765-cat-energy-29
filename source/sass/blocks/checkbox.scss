@@ -57,7 +57,7 @@
 
 .checkbox__label:focus-within .checkbox__mark,
 .checkbox__label:focus-within .checkbox__mark-add {
-  box-shadow: 0 0 0 2px rgba($accent-color, 1);
+  border: 2px solid $base-text-color;
 }
 
 .checkbox__mark {
